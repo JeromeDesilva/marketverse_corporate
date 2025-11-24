@@ -17,6 +17,212 @@ const Services = () => {
 
   const services = [
     {
+      id: 'market-research',
+      title: "Market Research & Analytics",
+      icon: "BarChart3",
+      tagline: "Data-driven insights for strategic decisions",
+      description: "Comprehensive market intelligence and analytics that inform strategy, reduce risks, and identify opportunities.",
+      fullDescription: "In today's data-rich environment, the challenge isn't finding information but extracting actionable insights. Our research service combines quantitative analysis with qualitative insights to provide a complete picture of your market, customers, and opportunities. We don't just deliver reports; we provide strategic recommendations that drive business decisions.",
+      keyFeatures: [
+        "Market sizing and segmentation",
+        "Competitive intelligence",
+        "Customer research",
+        "Trend analysis and forecasting"
+      ],
+      benefits: [
+        "Reduced market risks",
+        "Better strategic decisions",
+        "Identified opportunities",
+        "Customer understanding",
+        "Competitive advantage",
+        "Data-backed planning"
+      ],
+      idealFor: [
+        "New market entrants",
+        "Product launches",
+        "Strategic planning",
+        "Investment decisions"
+      ],
+      methodology: [
+        {
+          phase: "Research Design",
+          description: "Define objectives, methodology, sample size, and research instruments for the study.",
+          duration: "1 week"
+        },
+        {
+          phase: "Data Collection",
+          description: "Conduct surveys, interviews, focus groups, and gather secondary data from sources.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Analysis & Insights",
+          description: "Analyze data using statistical methods and extract meaningful patterns and insights.",
+          duration: "1 week"
+        },
+        {
+          phase: "Recommendations",
+          description: "Develop strategic recommendations and present findings with actionable next steps.",
+          duration: "1 week"
+        }
+      ],
+      deliverables: [
+        { title: "Research Report", description: "Comprehensive findings with data and analysis" },
+        { title: "Market Sizing", description: "TAM, SAM, SOM calculations and projections" },
+        { title: "Competitive Analysis", description: "Detailed competitor profiles and positioning" },
+        { title: "Customer Personas", description: "Detailed buyer profiles and journey maps" },
+        { title: "Opportunity Matrix", description: "Prioritized opportunities with feasibility" },
+        { title: "Strategic Recommendations", description: "Actionable insights for business decisions" }
+      ],
+      pricingTiers: [
+        {
+          name: "Essential",
+          price: 200000,
+          period: "/project",
+          features: [
+            "Secondary research",
+            "Market overview",
+            "Competitor analysis",
+            "Basic recommendations",
+            "1 revision round"
+          ]
+        },
+        {
+          name: "Comprehensive",
+          price: 350000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Essential",
+            "Primary research",
+            "Customer surveys",
+            "Detailed analysis",
+            "Strategic workshop",
+            "2 revision rounds"
+          ]
+        },
+        {
+          name: "Advanced",
+          price: 500000,
+          period: "/project",
+          features: [
+            "Everything in Comprehensive",
+            "Focus groups",
+            "Advanced analytics",
+            "Trend forecasting",
+            "Ongoing monitoring",
+            "Quarterly updates"
+          ]
+        }
+      ],
+      deliveryTime: "3-4 weeks",
+      caseStudyCount: 15,
+      isPopular: false,
+      category: "research"
+    },
+    {
+      id: 'competitive-intelligence',
+      title: "Competitive Intelligence & Industry Analysis",
+      icon: "BarChart3",
+      tagline: "Stay ahead with comprehensive competitor insights",
+      description: "Deep-dive competitive analysis and industry monitoring to understand market dynamics, competitor strategies, and emerging opportunities.",
+      fullDescription: "Knowledge is power in competitive markets. Our competitive intelligence service provides continuous monitoring and analysis of your competitors, industry trends, and market shifts. We help you anticipate competitor moves, identify market gaps, and make proactive strategic decisions. Through systematic data collection and expert analysis, we deliver actionable intelligence that keeps you ahead of the curve.",
+      keyFeatures: [
+        "Competitor strategy analysis",
+        "Market share tracking",
+        "Pricing and positioning intelligence",
+        "Industry trend monitoring"
+      ],
+      benefits: [
+        "Anticipate market changes",
+        "Identify competitive gaps",
+        "Strategic positioning clarity",
+        "Proactive decision-making",
+        "Reduced competitive risks",
+        "Market opportunity identification"
+      ],
+      idealFor: [
+        "Established businesses",
+        "Market leaders",
+        "Growth-stage companies",
+        "Strategic planning teams"
+      ],
+      methodology: [
+        {
+          phase: "Intelligence Framework",
+          description: "Establish monitoring systems, data sources, and analysis frameworks tailored to your competitive landscape.",
+          duration: "1 week"
+        },
+        {
+          phase: "Data Gathering",
+          description: "Collect competitor data through multiple sources including digital monitoring, market research, and industry analysis.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Strategic Analysis",
+          description: "Analyze competitor strategies, market positioning, strengths, weaknesses, and strategic intentions.",
+          duration: "1 week"
+        },
+        {
+          phase: "Intelligence Delivery",
+          description: "Present findings with strategic recommendations and ongoing monitoring dashboard setup.",
+          duration: "1 week"
+        }
+      ],
+      deliverables: [
+        { title: "Competitor Profiles", description: "Detailed analysis of key competitors and their strategies" },
+        { title: "Market Position Map", description: "Visual representation of competitive landscape" },
+        { title: "SWOT Analysis", description: "Comprehensive strengths, weaknesses, opportunities, threats" },
+        { title: "Intelligence Dashboard", description: "Real-time competitor monitoring system" },
+        { title: "Opportunity Report", description: "Market gaps and strategic opportunities identified" },
+        { title: "Strategic Recommendations", description: "Actionable plans based on competitive insights" }
+      ],
+      pricingTiers: [
+        {
+          name: "Snapshot",
+          price: 180000,
+          period: "/project",
+          features: [
+            "Competitor analysis",
+            "Market positioning",
+            "Basic SWOT",
+            "One-time report",
+            "1 revision round"
+          ]
+        },
+        {
+          name: "Continuous Intelligence",
+          price: 320000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Snapshot",
+            "Ongoing monitoring",
+            "Monthly updates",
+            "Intelligence dashboard",
+            "Strategic workshops",
+            "3 months coverage"
+          ]
+        },
+        {
+          name: "Strategic Intelligence",
+          price: 480000,
+          period: "/project",
+          features: [
+            "Everything in Continuous",
+            "Advanced analytics",
+            "Predictive insights",
+            "Quarterly strategy reviews",
+            "Competitive war gaming",
+            "6 months coverage"
+          ]
+        }
+      ],
+      deliveryTime: "3-5 weeks",
+      caseStudyCount: 11,
+      isPopular: true,
+      category: "research"
+    },
+    {
       id: 'brand-strategy',
       title: "Brand Strategy & Positioning",
       icon: "Target",
@@ -120,530 +326,630 @@ const Services = () => {
       category: "strategy"
     },
     {
-      id: 'digital-marketing',
-      title: "Digital Marketing & Performance",
-      icon: "TrendingUp",
-      tagline: "Data-driven campaigns that deliver measurable ROI",
-      description: "End-to-end digital marketing from strategy to execution, optimized for maximum performance and growth.",
-      fullDescription: "Our digital marketing service combines strategic thinking with tactical execution. We don't just run campaigns; we build growth engines. Through continuous testing, optimization, and data analysis, we identify what works and scale it aggressively. From paid advertising to SEO, email marketing to conversion optimization, we orchestrate multi-channel campaigns that drive real business results.",
+      id: 'customer-sentiment',
+      title: "Customer Sentiment & Behavior Analysis",
+      icon: "Target",
+      tagline: "Unlock deep customer insights for strategic advantage",
+      description: "Advanced sentiment analysis and behavioral intelligence that transforms customer feedback into actionable business strategies.",
+      fullDescription: "Understanding what customers think, feel, and do is the foundation of market success. Our customer sentiment and behavior analysis service combines advanced analytics, AI-powered sentiment tracking, and behavioral psychology to decode customer motivations. We analyze social media, reviews, support interactions, and behavioral data to reveal patterns that drive purchase decisions, loyalty, and advocacy.",
       keyFeatures: [
-        "Multi-channel campaign management",
-        "Performance tracking and analytics",
-        "Conversion rate optimization",
-        "ROI-focused budget allocation"
+        "Multi-channel sentiment monitoring",
+        "Behavioral pattern recognition",
+        "Customer journey analytics",
+        "Predictive churn analysis"
       ],
       benefits: [
-        "Measurable revenue growth",
-        "Lower customer acquisition costs",
-        "Higher conversion rates",
-        "Better marketing efficiency",
-        "Scalable growth systems",
-        "Data-driven decision making"
+        "Enhanced customer retention",
+        "Improved product development",
+        "Targeted marketing strategies",
+        "Proactive issue resolution",
+        "Increased customer lifetime value",
+        "Data-driven personalization"
       ],
       idealFor: [
-        "E-commerce businesses",
+        "E-commerce platforms",
         "SaaS companies",
-        "Lead generation businesses",
-        "Growth-stage startups"
-      ],
-      methodology: [
-        {
-          phase: "Audit & Strategy",
-          description: "Analyze current performance, identify opportunities, and develop comprehensive digital strategy.",
-          duration: "1 week"
-        },
-        {
-          phase: "Campaign Setup",
-          description: "Build campaigns across channels with proper tracking, targeting, and creative assets.",
-          duration: "1 week"
-        },
-        {
-          phase: "Launch & Optimize",
-          description: "Deploy campaigns and continuously optimize based on performance data and insights.",
-          duration: "2-4 weeks"
-        },
-        {
-          phase: "Scale & Expand",
-          description: "Scale winning campaigns and expand to new channels and audiences for growth.",
-          duration: "Ongoing"
-        }
-      ],
-      deliverables: [
-        { title: "Digital Strategy Document", description: "Channel strategy, targeting, and growth roadmap" },
-        { title: "Campaign Assets", description: "Ad creatives, landing pages, and marketing materials" },
-        { title: "Analytics Dashboard", description: "Real-time performance tracking and reporting" },
-        { title: "Monthly Reports", description: "Detailed analysis of results and recommendations" },
-        { title: "Optimization Playbook", description: "Testing frameworks and improvement strategies" },
-        { title: "Growth Recommendations", description: "Strategic insights for scaling campaigns" }
-      ],
-      pricingTiers: [
-        {
-          name: "Starter",
-          price: 300000,
-          period: "/month",
-          features: [
-            "2 marketing channels",
-            "Basic campaign management",
-            "Monthly reporting",
-            "Email support",
-            "₹50K ad spend included"
-          ]
-        },
-        {
-          name: "Growth",
-          price: 500000,
-          period: "/month",
-          recommended: true,
-          features: [
-            "4+ marketing channels",
-            "Advanced optimization",
-            "Weekly reporting",
-            "Dedicated manager",
-            "₹1L ad spend included",
-            "Conversion optimization"
-          ]
-        },
-        {
-          name: "Scale",
-          price: 800000,
-          period: "/month",
-          features: [
-            "Everything in Growth",
-            "Full-funnel strategy",
-            "Daily optimization",
-            "Senior strategist",
-            "₹2L+ ad spend included",
-            "Custom integrations"
-          ]
-        }
-      ],
-      deliveryTime: "4-6 weeks",
-      caseStudyCount: 25,
-      isPopular: true,
-      category: "digital"
-    },
-    {
-      id: 'content-creation',
-      title: "Content Creation & Management",
-      icon: "FileText",
-      tagline: "Compelling content that engages and converts",
-      description: "Professional content production across formats, from strategy to distribution, ensuring consistent brand storytelling.",
-      fullDescription: "Content is the fuel of modern marketing, and we're experts at creating content that works. Our team of writers, designers, and strategists collaborate to produce content that not only looks great but drives real business outcomes. From blog posts to videos, infographics to podcasts, we handle the entire content lifecycle while maintaining your brand voice and strategic objectives.",
-      keyFeatures: [
-        "Multi-format content production",
-        "Content strategy and planning",
-        "SEO-optimized writing",
-        "Content distribution and promotion"
-      ],
-      benefits: [
-        "Consistent content output",
-        "Improved search rankings",
-        "Higher engagement rates",
-        "Stronger brand authority",
-        "Better lead generation",
-        "Reduced content costs"
-      ],
-      idealFor: [
-        "B2B companies",
-        "Thought leaders",
-        "Content-driven brands",
-        "Educational platforms"
-      ],
-      methodology: [
-        {
-          phase: "Content Strategy",
-          description: "Develop content pillars, topics, and calendar aligned with business goals and audience needs.",
-          duration: "1 week"
-        },
-        {
-          phase: "Production Planning",
-          description: "Plan content formats, assign resources, and establish production workflows and timelines.",
-          duration: "1 week"
-        },
-        {
-          phase: "Content Creation",
-          description: "Produce high-quality content across formats with proper optimization and brand alignment.",
-          duration: "2-3 weeks"
-        },
-        {
-          phase: "Distribution & Analysis",
-          description: "Publish content across channels, promote strategically, and analyze performance metrics.",
-          duration: "Ongoing"
-        }
-      ],
-      deliverables: [
-        { title: "Content Strategy", description: "Comprehensive plan with topics, formats, and calendar" },
-        { title: "Blog Articles", description: "SEO-optimized long-form content pieces" },
-        { title: "Visual Content", description: "Infographics, images, and design assets" },
-        { title: "Video Content", description: "Scripted and produced video materials" },
-        { title: "Social Media Content", description: "Platform-specific posts and graphics" },
-        { title: "Performance Reports", description: "Content analytics and optimization insights" }
-      ],
-      pricingTiers: [
-        {
-          name: "Basic",
-          price: 150000,
-          period: "/month",
-          features: [
-            "8 blog posts/month",
-            "16 social posts/month",
-            "Basic graphics",
-            "Content calendar",
-            "Monthly reporting"
-          ]
-        },
-        {
-          name: "Professional",
-          price: 250000,
-          period: "/month",
-          recommended: true,
-          features: [
-            "12 blog posts/month",
-            "30 social posts/month",
-            "Custom graphics",
-            "2 videos/month",
-            "SEO optimization",
-            "Weekly reporting"
-          ]
-        },
-        {
-          name: "Premium",
-          price: 400000,
-          period: "/month",
-          features: [
-            "Everything in Professional",
-            "20+ blog posts/month",
-            "50+ social posts/month",
-            "4 videos/month",
-            "Podcast production",
-            "Content distribution"
-          ]
-        }
-      ],
-      deliveryTime: "2-4 weeks",
-      caseStudyCount: 18,
-      isPopular: false,
-      category: "content"
-    },
-    {
-      id: 'social-media',
-      title: "Social Media Marketing",
-      icon: "Share2",
-      tagline: "Build communities and drive engagement",
-      description: "Strategic social media management that builds brand presence, engages audiences, and drives business results.",
-      fullDescription: "Social media is where conversations happen, and we ensure your brand is part of them. Our social media service goes beyond posting content; we build communities, spark conversations, and turn followers into customers. Through strategic content, community management, and paid social advertising, we create social presence that drives real business value.",
-      keyFeatures: [
-        "Multi-platform management",
-        "Community engagement",
-        "Paid social advertising",
-        "Influencer partnerships"
-      ],
-      benefits: [
-        "Increased brand awareness",
-        "Higher engagement rates",
-        "Better customer relationships",
-        "More website traffic",
-        "Improved brand sentiment",
-        "Direct sales opportunities"
-      ],
-      idealFor: [
         "Consumer brands",
-        "D2C businesses",
-        "Lifestyle companies",
-        "Service providers"
+        "Service businesses"
       ],
       methodology: [
         {
-          phase: "Social Audit",
-          description: "Analyze current presence, audience insights, and competitive landscape across platforms.",
+          phase: "Data Integration",
+          description: "Connect all customer touchpoints, feedback channels, and behavioral data sources for comprehensive analysis.",
           duration: "1 week"
         },
         {
-          phase: "Strategy Development",
-          description: "Create platform-specific strategies, content themes, and engagement frameworks.",
-          duration: "1 week"
-        },
-        {
-          phase: "Content Production",
-          description: "Produce and schedule engaging content optimized for each platform and audience.",
+          phase: "Sentiment Analysis",
+          description: "Deploy AI-powered tools to analyze customer sentiment across reviews, social media, support tickets, and surveys.",
           duration: "2 weeks"
         },
         {
-          phase: "Community Management",
-          description: "Engage with audience, respond to comments, and build active community presence.",
-          duration: "Ongoing"
-        }
-      ],
-      deliverables: [
-        { title: "Social Media Strategy", description: "Platform-specific plans and content frameworks" },
-        { title: "Content Calendar", description: "Monthly posting schedule with themes and topics" },
-        { title: "Visual Assets", description: "Custom graphics, videos, and creative content" },
-        { title: "Community Reports", description: "Engagement metrics and audience insights" },
-        { title: "Campaign Results", description: "Paid social performance and ROI analysis" },
-        { title: "Growth Recommendations", description: "Strategic insights for audience expansion" }
-      ],
-      pricingTiers: [
-        {
-          name: "Starter",
-          price: 200000,
-          period: "/month",
-          features: [
-            "2 platforms",
-            "20 posts/month",
-            "Basic engagement",
-            "Monthly reporting",
-            "Content creation"
-          ]
-        },
-        {
-          name: "Growth",
-          price: 350000,
-          period: "/month",
-          recommended: true,
-          features: [
-            "4 platforms",
-            "40 posts/month",
-            "Active engagement",
-            "Paid social ads",
-            "Weekly reporting",
-            "Community management"
-          ]
-        },
-        {
-          name: "Enterprise",
-          price: 600000,
-          period: "/month",
-          features: [
-            "Everything in Growth",
-            "6+ platforms",
-            "60+ posts/month",
-            "Influencer campaigns",
-            "Crisis management",
-            "Dedicated team"
-          ]
-        }
-      ],
-      deliveryTime: "3-5 weeks",
-      caseStudyCount: 22,
-      isPopular: true,
-      category: "social"
-    },
-    {
-      id: 'import-sourcing',
-      title: "Import & Product Sourcing",
-      icon: "Package",
-      tagline: "Connect with global suppliers and scale your business",
-      description: "End-to-end import solutions from supplier identification to logistics, enabling businesses to source quality products globally.",
-      fullDescription: "Our import and sourcing service removes the complexity of international trade. With deep relationships in key manufacturing hubs and expertise in import regulations, we help businesses source quality products at competitive prices. From initial supplier vetting to final delivery, we manage the entire process, ensuring quality, compliance, and cost-effectiveness.",
-      keyFeatures: [
-        "Global supplier network",
-        "Quality assurance processes",
-        "Import compliance management",
-        "Logistics coordination"
-      ],
-      benefits: [
-        "Access to quality suppliers",
-        "Cost-effective sourcing",
-        "Reduced import risks",
-        "Faster time to market",
-        "Quality consistency",
-        "Regulatory compliance"
-      ],
-      idealFor: [
-        "Retail businesses",
-        "E-commerce brands",
-        "Distributors",
-        "Product companies"
-      ],
-      methodology: [
-        {
-          phase: "Requirements Analysis",
-          description: "Understand product specifications, quality standards, budget, and timeline requirements.",
+          phase: "Behavioral Mapping",
+          description: "Identify patterns in customer actions, preferences, and decision-making processes through advanced analytics.",
           duration: "1 week"
         },
         {
-          phase: "Supplier Identification",
-          description: "Research and shortlist qualified suppliers based on capabilities and track record.",
-          duration: "2 weeks"
-        },
-        {
-          phase: "Negotiation & Sampling",
-          description: "Negotiate terms, arrange samples, conduct quality checks, and finalize agreements.",
-          duration: "2-3 weeks"
-        },
-        {
-          phase: "Order & Logistics",
-          description: "Manage production, quality control, shipping, customs, and final delivery.",
-          duration: "4-8 weeks"
+          phase: "Strategic Recommendations",
+          description: "Translate insights into actionable strategies for product, marketing, and customer experience improvements.",
+          duration: "1 week"
         }
       ],
       deliverables: [
-        { title: "Supplier Database", description: "Vetted supplier contacts with capabilities and pricing" },
-        { title: "Product Samples", description: "Physical samples for quality evaluation" },
-        { title: "Cost Analysis", description: "Detailed breakdown of all costs and margins" },
-        { title: "Import Documentation", description: "All required paperwork and compliance documents" },
-        { title: "Quality Reports", description: "Inspection reports and quality certifications" },
-        { title: "Logistics Tracking", description: "Real-time shipment tracking and updates" }
+        { title: "Sentiment Dashboard", description: "Real-time customer sentiment tracking and alerts" },
+        { title: "Behavior Patterns Report", description: "Comprehensive analysis of customer actions and trends" },
+        { title: "Customer Journey Map", description: "Visual representation of touchpoints and pain points" },
+        { title: "Churn Risk Analysis", description: "Predictive model identifying at-risk customers" },
+        { title: "Persona Refinement", description: "Enhanced customer profiles based on actual behavior" },
+        { title: "Action Plan", description: "Prioritized recommendations for immediate implementation" }
       ],
       pricingTiers: [
         {
-          name: "Basic",
-          price: 500000,
+          name: "Basic Insights",
+          price: 180000,
           period: "/project",
           features: [
-            "Supplier identification",
-            "Basic negotiation",
-            "Sample coordination",
-            "Import guidance",
-            "1 product category"
+            "Sentiment analysis",
+            "Basic behavior tracking",
+            "Monthly reports",
+            "1 data source integration",
+            "3 months monitoring"
           ]
         },
         {
-          name: "Professional",
-          price: 800000,
+          name: "Advanced Analytics",
+          price: 350000,
           period: "/project",
           recommended: true,
           features: [
             "Everything in Basic",
-            "Quality assurance",
-            "Full logistics support",
-            "Customs clearance",
-            "3 product categories",
+            "Multi-channel analysis",
+            "Predictive modeling",
+            "Journey mapping",
+            "5 data source integrations",
+            "6 months monitoring"
+          ]
+        },
+        {
+          name: "Enterprise Intelligence",
+          price: 580000,
+          period: "/project",
+          features: [
+            "Everything in Advanced",
+            "Custom AI models",
+            "Real-time alerts",
+            "Competitive sentiment",
+            "Unlimited integrations",
+            "12 months monitoring"
+          ]
+        }
+      ],
+      deliveryTime: "3-5 weeks",
+      caseStudyCount: 14,
+      isPopular: true,
+      category: "research"
+    },
+    {
+      id: 'brand-evolution',
+      title: "Brand Evolution & Market Positioning",
+      icon: "Target",
+      tagline: "Strategic brand growth for evolving markets",
+      description: "Systematic brand development and market repositioning for businesses ready to scale, expand, or pivot into new opportunities.",
+      fullDescription: "Markets evolve, and your brand must evolve with them. Our brand evolution service is designed for businesses that have outgrown their current positioning or need to adapt to changing market dynamics. Unlike complete rebranding, we focus on strategic evolution—maintaining brand equity while updating positioning, messaging, and visual expression to capture new opportunities and audiences.",
+      keyFeatures: [
+        "Market dynamics assessment",
+        "Strategic positioning evolution",
+        "Visual identity modernization",
+        "Audience expansion strategy"
+      ],
+      benefits: [
+        "Maintained brand equity",
+        "Expanded market reach",
+        "Enhanced relevance",
+        "Future-proof positioning",
+        "Aligned stakeholder vision",
+        "Gradual transition management"
+      ],
+      idealFor: [
+        "Growing businesses",
+        "Market expanders",
+        "Portfolio diversifiers",
+        "Legacy brand modernizers"
+      ],
+      methodology: [
+        {
+          phase: "Evolution Assessment",
+          description: "Evaluate current brand strength, market position, and growth opportunities to define evolution scope.",
+          duration: "1 week"
+        },
+        {
+          phase: "Strategic Repositioning",
+          description: "Develop updated positioning that bridges current brand equity with future market opportunities.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Identity Modernization",
+          description: "Refresh visual and verbal identity elements while maintaining recognizable brand essence.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Phased Implementation",
+          description: "Roll out evolved brand gradually with stakeholder alignment and market communication strategy.",
+          duration: "Ongoing"
+        }
+      ],
+      deliverables: [
+        { title: "Evolution Strategy", description: "Comprehensive roadmap for brand development and growth" },
+        { title: "Updated Positioning", description: "Refreshed brand positioning and value propositions" },
+        { title: "Modernized Identity", description: "Updated visual and verbal brand expression system" },
+        { title: "Audience Strategy", description: "Plans for reaching new segments while retaining core customers" },
+        { title: "Implementation Timeline", description: "Phased rollout plan with risk mitigation strategies" },
+        { title: "Stakeholder Kit", description: "Communication materials for internal and external alignment" }
+      ],
+      pricingTiers: [
+        {
+          name: "Identity Refresh",
+          price: 220000,
+          period: "/project",
+          features: [
+            "Visual identity update",
+            "Positioning refinement",
+            "Brand guidelines",
+            "Basic rollout plan",
+            "2 months support"
+          ]
+        },
+        {
+          name: "Strategic Evolution",
+          price: 420000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Refresh",
+            "Market analysis",
+            "Audience expansion strategy",
+            "Comprehensive guidelines",
+            "Change management",
             "6 months support"
           ]
         },
         {
-          name: "Enterprise",
-          price: 1500000,
+          name: "Complete Transformation",
+          price: 680000,
           period: "/project",
           features: [
-            "Everything in Professional",
-            "Dedicated sourcing team",
-            "Factory audits",
-            "Ongoing supplier management",
-            "Unlimited categories",
+            "Everything in Strategic",
+            "Multi-market positioning",
+            "Portfolio architecture",
+            "Executive workshops",
+            "Ongoing optimization",
             "12 months support"
           ]
         }
       ],
-      deliveryTime: "6-8 weeks",
-      caseStudyCount: 8,
+      deliveryTime: "4-6 weeks",
+      caseStudyCount: 9,
+      isPopular: false,
+      category: "strategy"
+    },
+    {
+      id: 'go-to-market-strategy',
+      title: "Go-to-Market Strategy & Launch Planning",
+      icon: "Target",
+      tagline: "Strategic market entry for maximum impact",
+      description: "Comprehensive go-to-market strategies for new products, services, or market entries—from positioning to launch execution.",
+      fullDescription: "Launching something new requires more than a great product—it demands a strategic approach to market entry. Our go-to-market service combines market intelligence, competitive analysis, and launch expertise to ensure your new offering captures attention and gains traction. We develop complete launch strategies covering positioning, pricing, channels, messaging, and activation tactics that drive early adoption and sustainable growth.",
+      keyFeatures: [
+        "Market entry strategy",
+        "Launch positioning and messaging",
+        "Channel and partnership strategy",
+        "Launch execution planning"
+      ],
+      benefits: [
+        "Reduced launch risks",
+        "Faster time to traction",
+        "Optimized market fit",
+        "Clear differentiation",
+        "Coordinated execution",
+        "Measurable launch metrics"
+      ],
+      idealFor: [
+        "Product launches",
+        "Market expansions",
+        "New business units",
+        "Service line additions"
+      ],
+      methodology: [
+        {
+          phase: "Market Analysis",
+          description: "Research target market, competitors, customer needs, and optimal entry strategies for success.",
+          duration: "1 week"
+        },
+        {
+          phase: "Strategy Development",
+          description: "Define positioning, pricing, channels, partnerships, and messaging for market entry.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Launch Planning",
+          description: "Create detailed execution plan with timelines, budgets, resources, and success metrics.",
+          duration: "1 week"
+        },
+        {
+          phase: "Launch Support",
+          description: "Provide hands-on guidance during execution phase with real-time optimization and troubleshooting.",
+          duration: "4-8 weeks"
+        }
+      ],
+      deliverables: [
+        { title: "GTM Strategy Document", description: "Complete go-to-market strategy and rationale" },
+        { title: "Launch Positioning", description: "Product/service positioning and messaging framework" },
+        { title: "Channel Strategy", description: "Optimal distribution and partnership approach" },
+        { title: "Launch Plan", description: "Detailed execution roadmap with timelines and responsibilities" },
+        { title: "Marketing Assets", description: "Core messaging, content, and campaign frameworks" },
+        { title: "Success Metrics", description: "KPIs and measurement framework for launch tracking" }
+      ],
+      pricingTiers: [
+        {
+          name: "Launch Essentials",
+          price: 250000,
+          period: "/project",
+          features: [
+            "Market analysis",
+            "Basic positioning",
+            "Channel recommendation",
+            "Launch checklist",
+            "1 month support"
+          ]
+        },
+        {
+          name: "Complete Launch",
+          price: 450000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Essentials",
+            "Comprehensive strategy",
+            "Detailed launch plan",
+            "Marketing frameworks",
+            "Campaign guidance",
+            "3 months support"
+          ]
+        },
+        {
+          name: "Managed Launch",
+          price: 750000,
+          period: "/project",
+          features: [
+            "Everything in Complete",
+            "Hands-on execution support",
+            "Real-time optimization",
+            "Crisis management",
+            "Post-launch analysis",
+            "6 months support"
+          ]
+        }
+      ],
+      deliveryTime: "3-5 weeks (strategy), 4-8 weeks (execution support)",
+      caseStudyCount: 16,
+      isPopular: true,
+      category: "strategy"
+    },
+    {
+      id: 'import-sourcing-global',
+      title: "Import & Product Sourcing - Global Excellence",
+      icon: "Package",
+      tagline: "Connect to world-class suppliers and products",
+      description: "End-to-end import and sourcing solutions connecting you with verified global suppliers, ensuring quality products at competitive prices.",
+      fullDescription: "Navigate the complexities of international trade with confidence. Our import and product sourcing service provides comprehensive support from supplier identification to logistics coordination. With our extensive network of verified manufacturers and deep understanding of import regulations, we streamline the entire process, reducing risks and maximizing value.",
+      keyFeatures: [
+        "Global supplier network access",
+        "Quality assurance and verification",
+        "Competitive pricing negotiation",
+        "Import compliance and documentation"
+      ],
+      benefits: [
+        "Cost reduction through direct sourcing",
+        "Access to quality verified suppliers",
+        "Reduced import risks and delays",
+        "Streamlined logistics coordination",
+        "Regulatory compliance assurance",
+        "Time savings on vendor management"
+      ],
+      idealFor: [
+        "Retailers seeking new products",
+        "Businesses expanding product lines",
+        "Companies entering new markets",
+        "Startups launching physical products"
+      ],
+      methodology: [
+        {
+          phase: "Requirements Analysis",
+          description: "Define product specifications, quantity requirements, quality standards, and budget parameters.",
+          duration: "3-5 days"
+        },
+        {
+          phase: "Supplier Identification",
+          description: "Research and shortlist potential suppliers based on capabilities, certifications, and track record.",
+          duration: "1 week"
+        },
+        {
+          phase: "Verification & Negotiation",
+          description: "Verify supplier credentials, conduct factory audits, and negotiate terms and pricing.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Order & Logistics",
+          description: "Place orders, coordinate shipping, handle documentation, and manage customs clearance.",
+          duration: "4-8 weeks"
+        }
+      ],
+      deliverables: [
+        { title: "Supplier Database", description: "Verified supplier contacts with detailed profiles" },
+        { title: "Cost Analysis", description: "Comprehensive breakdown of landed costs" },
+        { title: "Quality Reports", description: "Inspection reports and quality certifications" },
+        { title: "Import Documentation", description: "Complete customs and regulatory paperwork" },
+        { title: "Logistics Coordination", description: "Shipping and delivery management support" },
+        { title: "Supplier Contracts", description: "Negotiated agreements and terms" }
+      ],
+      pricingTiers: [
+        {
+          name: "Single Product",
+          price: 150000,
+          period: "/product",
+          features: [
+            "Supplier sourcing",
+            "Basic verification",
+            "Price negotiation",
+            "Import documentation",
+            "1 product sourcing"
+          ]
+        },
+        {
+          name: "Product Line",
+          price: 400000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Single Product",
+            "Factory audits",
+            "Quality inspections",
+            "Logistics coordination",
+            "Up to 5 products",
+            "3 months support"
+          ]
+        },
+        {
+          name: "Strategic Partnership",
+          price: 800000,
+          period: "/project",
+          features: [
+            "Everything in Product Line",
+            "Long-term supplier relationships",
+            "Ongoing quality management",
+            "Supply chain optimization",
+            "Unlimited products",
+            "12 months support"
+          ]
+        }
+      ],
+      deliveryTime: "6-10 weeks",
+      caseStudyCount: 18,
+      isPopular: true,
+      category: "sourcing"
+    },
+    {
+      id: 'import-sourcing-premium',
+      title: "Import & Product Sourcing - Premium Selection",
+      icon: "Package",
+      tagline: "Curated premium products from verified manufacturers",
+      description: "Specialized sourcing for high-quality, premium products with rigorous quality control and supplier vetting processes.",
+      fullDescription: "For businesses that prioritize quality and brand reputation, our premium sourcing service offers access to top-tier manufacturers and artisans worldwide. We focus on product excellence, ethical sourcing practices, and building long-term partnerships with suppliers who share your commitment to quality. Every supplier undergoes extensive verification, and every product meets stringent quality benchmarks.",
+      keyFeatures: [
+        "Premium supplier network",
+        "Multi-stage quality verification",
+        "Ethical sourcing certification",
+        "Brand protection support"
+      ],
+      benefits: [
+        "Superior product quality",
+        "Enhanced brand reputation",
+        "Reduced quality-related returns",
+        "Ethical supply chain confidence",
+        "Exclusive supplier partnerships",
+        "White-glove service experience"
+      ],
+      idealFor: [
+        "Premium brands",
+        "Luxury retailers",
+        "Quality-focused businesses",
+        "Sustainable product companies"
+      ],
+      methodology: [
+        {
+          phase: "Premium Supplier Curation",
+          description: "Identify and vet premium manufacturers with proven quality records and certifications.",
+          duration: "1 week"
+        },
+        {
+          phase: "In-depth Quality Assessment",
+          description: "Conduct comprehensive factory audits, product testing, and certification verification.",
+          duration: "2 weeks"
+        },
+        {
+          phase: "Strategic Partnership Building",
+          description: "Establish long-term relationships, negotiate favorable terms, and secure exclusive agreements.",
+          duration: "1 week"
+        },
+        {
+          phase: "Quality-Assured Fulfillment",
+          description: "Implement stringent quality controls, coordinate premium logistics, and ensure perfect delivery.",
+          duration: "6-10 weeks"
+        }
+      ],
+      deliverables: [
+        { title: "Premium Supplier Portfolio", description: "Curated selection of top-tier verified suppliers" },
+        { title: "Quality Certification Package", description: "Complete quality and compliance documentation" },
+        { title: "Ethical Sourcing Report", description: "Sustainability and ethical practice verification" },
+        { title: "Product Sample Collection", description: "Physical samples for quality assessment" },
+        { title: "Exclusive Partnership Agreements", description: "Negotiated terms and protection clauses" },
+        { title: "Premium Logistics Management", description: "White-glove shipping and handling coordination" }
+      ],
+      pricingTiers: [
+        {
+          name: "Premium Start",
+          price: 250000,
+          period: "/product",
+          features: [
+            "Premium supplier sourcing",
+            "Factory audits",
+            "Quality certifications",
+            "Sample procurement",
+            "1 premium product"
+          ]
+        },
+        {
+          name: "Premium Collection",
+          price: 600000,
+          period: "/project",
+          recommended: true,
+          features: [
+            "Everything in Premium Start",
+            "Ethical sourcing verification",
+            "Exclusive partnerships",
+            "Brand protection support",
+            "Up to 5 premium products",
+            "6 months support"
+          ]
+        },
+        {
+          name: "Luxury Partnership",
+          price: 1200000,
+          period: "/project",
+          features: [
+            "Everything in Premium Collection",
+            "White-glove service",
+            "Custom product development",
+            "Ongoing quality assurance",
+            "Unlimited premium products",
+            "24/7 support access"
+          ]
+        }
+      ],
+      deliveryTime: "8-12 weeks",
+      caseStudyCount: 10,
       isPopular: false,
       category: "sourcing"
     },
     {
-      id: 'market-research',
-      title: "Market Research & Analytics",
-      icon: "BarChart3",
-      tagline: "Data-driven insights for strategic decisions",
-      description: "Comprehensive market intelligence and analytics that inform strategy, reduce risks, and identify opportunities.",
-      fullDescription: "In today's data-rich environment, the challenge isn't finding information but extracting actionable insights. Our research service combines quantitative analysis with qualitative insights to provide a complete picture of your market, customers, and opportunities. We don't just deliver reports; we provide strategic recommendations that drive business decisions.",
+      id: 'import-sourcing-value',
+      title: "Import & Product Sourcing - Value Optimization",
+      icon: "Package",
+      tagline: "Maximum value through smart sourcing strategies",
+      description: "Cost-effective sourcing solutions that don't compromise on quality, perfect for businesses seeking competitive advantage through procurement optimization.",
+      fullDescription: "Smart businesses know that cost optimization doesn't mean sacrificing quality. Our value-focused sourcing service leverages bulk purchasing power, strategic supplier relationships, and efficient logistics to deliver exceptional value. We help you source products that meet your quality standards while maximizing your margins, giving you a competitive edge in your market.",
       keyFeatures: [
-        "Market sizing and segmentation",
-        "Competitive intelligence",
-        "Customer research",
-        "Trend analysis and forecasting"
+        "Cost optimization strategies",
+        "Bulk purchasing leverage",
+        "Efficient logistics planning",
+        "Value engineering support"
       ],
       benefits: [
-        "Reduced market risks",
-        "Better strategic decisions",
-        "Identified opportunities",
-        "Customer understanding",
-        "Competitive advantage",
-        "Data-backed planning"
+        "Reduced procurement costs",
+        "Improved profit margins",
+        "Competitive pricing advantage",
+        "Optimized inventory management",
+        "Faster time to market",
+        "Scalable sourcing solutions"
       ],
       idealFor: [
-        "New market entrants",
-        "Product launches",
-        "Strategic planning",
-        "Investment decisions"
+        "Cost-conscious retailers",
+        "High-volume distributors",
+        "Startup businesses",
+        "E-commerce sellers"
       ],
       methodology: [
         {
-          phase: "Research Design",
-          description: "Define objectives, methodology, sample size, and research instruments for the study.",
+          phase: "Cost Analysis & Strategy",
+          description: "Analyze current costs, identify optimization opportunities, and develop value-focused sourcing strategy.",
+          duration: "3-5 days"
+        },
+        {
+          phase: "Value Supplier Matching",
+          description: "Identify suppliers offering optimal price-quality balance through extensive market research.",
           duration: "1 week"
         },
         {
-          phase: "Data Collection",
-          description: "Conduct surveys, interviews, focus groups, and gather secondary data from sources.",
-          duration: "2 weeks"
-        },
-        {
-          phase: "Analysis & Insights",
-          description: "Analyze data using statistical methods and extract meaningful patterns and insights.",
+          phase: "Negotiation & Optimization",
+          description: "Leverage bulk purchasing and long-term commitments to secure best pricing and terms.",
           duration: "1 week"
         },
         {
-          phase: "Recommendations",
-          description: "Develop strategic recommendations and present findings with actionable next steps.",
-          duration: "1 week"
+          phase: "Efficient Fulfillment",
+          description: "Coordinate streamlined logistics and documentation for cost-effective delivery.",
+          duration: "3-6 weeks"
         }
       ],
       deliverables: [
-        { title: "Research Report", description: "Comprehensive findings with data and analysis" },
-        { title: "Market Sizing", description: "TAM, SAM, SOM calculations and projections" },
-        { title: "Competitive Analysis", description: "Detailed competitor profiles and positioning" },
-        { title: "Customer Personas", description: "Detailed buyer profiles and journey maps" },
-        { title: "Opportunity Matrix", description: "Prioritized opportunities with feasibility" },
-        { title: "Strategic Recommendations", description: "Actionable insights for business decisions" }
+        { title: "Cost Optimization Report", description: "Detailed analysis of savings opportunities" },
+        { title: "Value Supplier Network", description: "Database of cost-effective quality suppliers" },
+        { title: "Pricing Comparison Matrix", description: "Comprehensive market price benchmarking" },
+        { title: "Logistics Optimization Plan", description: "Streamlined shipping and handling strategy" },
+        { title: "Volume Purchase Agreements", description: "Negotiated bulk pricing contracts" },
+        { title: "Margin Analysis", description: "Projected profitability and ROI calculations" }
       ],
       pricingTiers: [
         {
-          name: "Essential",
-          price: 200000,
-          period: "/project",
+          name: "Value Starter",
+          price: 100000,
+          period: "/product",
           features: [
-            "Secondary research",
-            "Market overview",
-            "Competitor analysis",
-            "Basic recommendations",
-            "1 revision round"
+            "Cost-effective sourcing",
+            "Basic supplier verification",
+            "Price negotiation",
+            "Standard documentation",
+            "1 product sourcing"
           ]
         },
         {
-          name: "Comprehensive",
-          price: 350000,
+          name: "Value Optimization",
+          price: 280000,
           period: "/project",
           recommended: true,
           features: [
-            "Everything in Essential",
-            "Primary research",
-            "Customer surveys",
-            "Detailed analysis",
-            "Strategic workshop",
-            "2 revision rounds"
+            "Everything in Value Starter",
+            "Bulk pricing negotiation",
+            "Quality spot checks",
+            "Logistics optimization",
+            "Up to 5 products",
+            "3 months support"
           ]
         },
         {
-          name: "Advanced",
-          price: 500000,
+          name: "Value Enterprise",
+          price: 550000,
           period: "/project",
           features: [
-            "Everything in Comprehensive",
-            "Focus groups",
-            "Advanced analytics",
-            "Trend forecasting",
-            "Ongoing monitoring",
-            "Quarterly updates"
+            "Everything in Value Optimization",
+            "Strategic supplier partnerships",
+            "Continuous cost optimization",
+            "Supply chain management",
+            "Unlimited products",
+            "12 months support"
           ]
         }
       ],
-      deliveryTime: "3-4 weeks",
-      caseStudyCount: 15,
-      isPopular: false,
-      category: "research"
+      deliveryTime: "4-8 weeks",
+      caseStudyCount: 22,
+      isPopular: true,
+      category: "sourcing"
     }
   ];
 
   const categories = [
     { id: 'all', label: 'All Services', icon: 'Grid' },
     { id: 'strategy', label: 'Strategy', icon: 'Target' },
-    { id: 'digital', label: 'Digital', icon: 'TrendingUp' },
-    { id: 'content', label: 'Content', icon: 'FileText' },
-    { id: 'social', label: 'Social', icon: 'Share2' },
-    { id: 'sourcing', label: 'Sourcing', icon: 'Package' },
-    { id: 'research', label: 'Research', icon: 'BarChart3' }
+    { id: 'research', label: 'Research', icon: 'BarChart3' },
+    { id: 'sourcing', label: 'Import & Sourcing', icon: 'Package' }
   ];
 
   const filteredServices = activeFilter === 'all' 

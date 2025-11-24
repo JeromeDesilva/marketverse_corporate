@@ -11,7 +11,7 @@ const FeaturedCaseStudy = () => {
     title: "Korean Super Store",
     subtitle: "From Zero to Market Leader in 18 Months",
     description: "How we transformed a Korean product import business into India's premier destination for authentic Korean goods through strategic brand positioning, multi-channel marketing, and cultural market understanding.",
-    image: "https://images.unsplash.com/photo-1663247456125-9ce1ae2a1b1e",
+    image: "https://images.unsplash.com/photo-1652705334308-78bc1c9ab361",
     imageAlt: "Modern Korean Super Store interior with bright lighting, organized shelves displaying colorful Korean snacks, cosmetics and food products, customers shopping in clean contemporary retail space",
     metrics: [
     { value: "300%", label: "Revenue Growth", icon: "TrendingUp" },

@@ -5,42 +5,42 @@ const ClientLogos = () => {
   const clients = [
   {
     name: "Korean Super Store",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1fea036fa-1763833811498.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1cf9e762a-1764004135360.png",
     alt: "Korean Super Store logo featuring modern typography with red and white color scheme representing premium Korean products retail brand"
   },
   {
     name: "TechVision India",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_142f19a7c-1763833814336.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_14916a117-1764004136884.png",
     alt: "TechVision India logo with blue gradient and circuit pattern symbolizing technology innovation and digital transformation company"
   },
   {
     name: "GreenLeaf Organics",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1210fbae9-1763833811201.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1fbcbf45c-1764004136026.png",
     alt: "GreenLeaf Organics logo featuring green leaf icon with earth tones representing sustainable organic food products brand"
   },
   {
     name: "Urban Fashion Co",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_14a839b8a-1763833812028.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1f07754ac-1764004136711.png",
     alt: "Urban Fashion Co logo with minimalist black typography and geometric shapes representing contemporary fashion retail brand"
   },
   {
     name: "HealthFirst Wellness",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_11d0efdad-1763833811746.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_133f591cd-1764004135655.png",
     alt: "HealthFirst Wellness logo featuring medical cross symbol in teal color representing healthcare and wellness services brand"
   },
   {
     name: "Global Trade Partners",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1a980841a-1763833813522.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1a72b6512-1764004135297.png",
     alt: "Global Trade Partners logo with world map icon and blue corporate colors representing international import export business"
   },
   {
     name: "Artisan Crafts",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_172b38702-1763833812679.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_15a21c9cd-1764004139200.png",
     alt: "Artisan Crafts logo featuring handmade pottery icon with warm brown tones representing traditional handicraft marketplace brand"
   },
   {
     name: "FitLife Nutrition",
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1ce3b8835-1763833811748.png",
+    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_18fdffee3-1764004136847.png",
     alt: "FitLife Nutrition logo with dumbbell and apple icon in vibrant orange representing fitness supplements and healthy lifestyle brand"
   }];
 

@@ -9,47 +9,47 @@
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --color-primary: #1B365D; /* blue-900 - Deep Strategic Blue */
+    /* Brand Colors - Beginning Version Color Theme */
+    --color-primary: #1A237E; /* Navy blue - Primary brand color for authority and trust */
     --color-primary-foreground: #FFFFFF; /* white */
-    --color-secondary: #E8B931; /* amber-400 - Golden Opportunity */
-    --color-secondary-foreground: #1A1A1A; /* gray-900 */
-    --color-accent: #FF6B35; /* orange-500 - Action Orange */
-    --color-accent-foreground: #FFFFFF; /* white */
+    --color-secondary: #F7D920; /* Vibrant yellow - Primary accent for CTAs and highlights */
+    --color-secondary-foreground: #1A237E; /* Navy blue for contrast */
+    --color-accent: #F7D920; /* Vibrant yellow - Action color */
+    --color-accent-foreground: #1A237E; /* Navy blue */
     
     /* Surface Colors */
-    --color-background: #FAFBFC; /* gray-50 - Premium White */
-    --color-foreground: #1A1A1A; /* gray-900 - Authority Black */
+    --color-background: #FFFFFF; /* Pure white - Clean premium background */
+    --color-foreground: #1A237E; /* Navy blue - Main text */
     --color-card: #FFFFFF; /* white */
-    --color-card-foreground: #1A1A1A; /* gray-900 */
+    --color-card-foreground: #1A237E; /* Navy blue */
     --color-popover: #FFFFFF; /* white */
-    --color-popover-foreground: #1A1A1A; /* gray-900 */
+    --color-popover-foreground: #1A237E; /* Navy blue */
     
     /* Muted Colors */
-    --color-muted: #F3F4F6; /* gray-100 */
-    --color-muted-foreground: #4A5568; /* gray-600 - Insight Gray */
+    --color-muted: #E8E8E8; /* Light gray - Subtle backgrounds from logo */
+    --color-muted-foreground: #5C6BC0; /* Medium navy - Secondary text */
     
     /* Border & Input */
-    --color-border: #E5E7EB; /* gray-200 */
-    --color-input: #E5E7EB; /* gray-200 */
-    --color-ring: #1B365D; /* blue-900 */
+    --color-border: #E8E8E8; /* Light gray border */
+    --color-input: #F5F5F5; /* Very light gray input background */
+    --color-ring: #1A237E; /* Navy blue ring */
     
     /* Status Colors */
-    --color-success: #2E8B57; /* green-600 - Growth Green */
+    --color-success: #4CAF50; /* green - Success indicator */
     --color-success-foreground: #FFFFFF; /* white */
-    --color-warning: #F59E0B; /* amber-500 */
-    --color-warning-foreground: #1A1A1A; /* gray-900 */
-    --color-error: #EF4444; /* red-500 */
+    --color-warning: #FF9800; /* amber */
+    --color-warning-foreground: #1A237E; /* Navy blue */
+    --color-error: #F44336; /* red */
     --color-error-foreground: #FFFFFF; /* white */
-    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive: #F44336; /* red */
     --color-destructive-foreground: #FFFFFF; /* white */
     
     /* Additional Brand Colors */
-    --color-trust: #2E8B57; /* green-600 - Trust Builder */
+    --color-trust: #4CAF50; /* green - Trust Builder */
     --color-trust-foreground: #FFFFFF; /* white */
-    --color-partnership: #D63384; /* pink-600 - Partnership Purple */
+    --color-partnership: #E91E63; /* pink - Partnership accent */
     --color-partnership-foreground: #FFFFFF; /* white */
-    --color-innovation: #7C3AED; /* purple-600 - Strategic purple accent */
+    --color-innovation: #673AB7; /* purple - Strategic accent */
     --color-innovation-foreground: #FFFFFF; /* white */
     
     /* Typography */
@@ -313,5 +313,46 @@
 
   .backdrop-blur-custom {
     backdrop-filter: blur(8px);
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.3;
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-40px) translateX(-10px);
+      opacity: 0.9;
+    }
+    75% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-float {
+    animation: float ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
   }
 }

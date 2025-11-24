@@ -6,21 +6,19 @@ import Button from '../../../components/ui/Button';
 
 const ROICalculator = () => {
   const [formData, setFormData] = useState({
-    service: 'digital-marketing',
     currentRevenue: '',
     marketingBudget: '',
-    growthGoal: '25'
+    growthGoal: '25',
+    serviceCategory: 'all'
   });
 
   const [results, setResults] = useState(null);
 
-  const serviceOptions = [
-    { value: 'brand-strategy', label: 'Brand Strategy & Positioning' },
-    { value: 'digital-marketing', label: 'Digital Marketing & Performance' },
-    { value: 'content-creation', label: 'Content Creation & Management' },
-    { value: 'social-media', label: 'Social Media Marketing' },
-    { value: 'import-sourcing', label: 'Import & Product Sourcing' },
-    { value: 'market-research', label: 'Market Research & Analytics' }
+  const serviceCategoryOptions = [
+    { value: 'all', label: 'All Services Impact' },
+    { value: 'strategy', label: 'Strategy Services' },
+    { value: 'research', label: 'Research Services' },
+    { value: 'sourcing', label: 'Import & Sourcing Services' }
   ];
 
   const growthOptions = [
@@ -64,27 +62,27 @@ const ROICalculator = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-[#E8B931]/10 px-4 py-2 rounded-full mb-4">
-            <Icon name="Calculator" size={18} color="#E8B931" />
-            <span className="text-sm font-semibold text-[#1B365D]">Interactive Tool</span>
+            <Icon name="TrendingUp" size={18} color="#E8B931" />
+            <span className="text-sm font-semibold text-[#1B365D]">Business Impact Calculator</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#1A1A1A] mb-4">
-            Calculate Your Marketing ROI
+            Measure Your Business Growth Potential
           </h2>
           <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
-            See the potential return on investment for your marketing initiatives with our data-driven calculator.
+            Calculate the potential impact of our comprehensive marketing strategy, research, and overseas sourcing services on your business growth.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="bg-gradient-to-br from-[#1B365D] to-[#7C3AED] rounded-xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-6">Input Your Details</h3>
+            <h3 className="text-2xl font-bold mb-6">Start Your Growth Assessment</h3>
             
             <form onSubmit={calculateROI} className="space-y-6">
               <Select
-                label="Select Service"
-                options={serviceOptions}
-                value={formData?.service}
-                onChange={(value) => handleSelectChange('service', value)}
+                label="Service Category"
+                options={serviceCategoryOptions}
+                value={formData?.serviceCategory}
+                onChange={(value) => handleSelectChange('serviceCategory', value)}
               />
 
               <Input
@@ -115,7 +113,7 @@ const ROICalculator = () => {
               />
 
               <Button type="submit" variant="secondary" fullWidth iconName="TrendingUp" iconPosition="right">
-                Calculate ROI
+                Calculate Impact
               </Button>
             </form>
           </div>

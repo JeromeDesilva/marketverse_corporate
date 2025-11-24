@@ -22,7 +22,7 @@ const CaseStudyPreview = () => {
   },
   {
     id: 2,
-    title: "Tech Startup: Brand Positioning & Launch",
+    title: "Prodel delivery launch last mile connectivity quick commence",
     service: "Brand Strategy",
     image: "https://images.unsplash.com/photo-1681164315051-add1906a9b07",
     imageAlt: "Modern tech startup office with young professionals collaborating around laptop computers in bright open workspace",

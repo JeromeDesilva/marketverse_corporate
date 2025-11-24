@@ -13,7 +13,6 @@ const Header = () => {
     { path: '/case-studies', label: 'Case Studies' },
     { path: '/about', label: 'About' },
     { path: '/investment-partnership-portal', label: 'Investor' },
-    { path: '/investment-partnership-portal', label: 'Partner' },
     { path: '/contact', label: 'Contact' }
   ];
 
@@ -32,10 +31,13 @@ const Header = () => {
       <header className="header">
         <div className="header-container">
           <Link to="/homepage" className="header-logo">
-            <div className="header-logo-icon">
-              <Icon name="TrendingUp" size={24} color="#FFFFFF" />
+            <div className="flex flex-col items-center">
+              <img 
+                src="/assets/images/Marketverse_Logo-02-1763987778269.jpg" 
+                alt="Marketverse logo with bold black MARKETVERSE typography in modern sans-serif font"
+                className="h-16 w-auto object-contain"
+              />
             </div>
-            <span className="header-logo-text">Marketverse</span>
           </Link>
 
           <nav className="header-nav">
@@ -83,10 +85,13 @@ const Header = () => {
           <div className="header-mobile-menu">
             <div className="header-mobile-menu-header">
               <Link to="/homepage" className="header-logo" onClick={closeMobileMenu}>
-                <div className="header-logo-icon">
-                  <Icon name="TrendingUp" size={24} color="#FFFFFF" />
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/assets/images/Marketverse_Logo-02-1763987778269.jpg" 
+                    alt="Marketverse logo with bold black MARKETVERSE typography in modern sans-serif font"
+                    className="h-14 w-auto object-contain"
+                  />
                 </div>
-                <span className="header-logo-text">Marketverse</span>
               </Link>
               <button
                 onClick={closeMobileMenu}

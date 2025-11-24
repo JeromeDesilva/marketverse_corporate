@@ -17,10 +17,10 @@ const ServicesPreview = () => {
     },
     {
       id: 2,
-      icon: "Megaphone",
-      title: "Performance Marketing",
-      description: "Data-driven campaigns that deliver measurable ROI through multi-channel marketing excellence and continuous optimization.",
-      features: ["Digital Campaigns", "ROI Optimization", "Analytics"],
+      icon: "Handshake",
+      title: "Brand Promotion & Partnership",
+      description: "Build powerful strategic alliances and promotional campaigns that amplify brand reach through collaborative partnerships and co-marketing initiatives.",
+      features: ["Partnership Development", "Co-Marketing Campaigns", "Brand Collaboration"],
       color: "from-accent to-secondary"
     },
     {

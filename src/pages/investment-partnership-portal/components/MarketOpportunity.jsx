@@ -48,7 +48,7 @@ const MarketOpportunity = () => {
     name: 'Health & Wellness',
     growth: '22%',
     investment: '₹30L - ₹3Cr',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_105b4cbd6-1763833814305.png",
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1e5d2f90c-1764004139518.png",
     imageAlt: 'Fitness and wellness center with modern exercise equipment, yoga mats, healthy lifestyle products, natural lighting, and wellness consultation area',
     potential: 'Very High'
   },

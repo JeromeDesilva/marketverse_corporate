@@ -5,8 +5,8 @@ const WhyChooseUs = () => {
   const reasons = [
     {
       icon: "Award",
-      title: "100+ Man-Years Expertise",
-      description: "Decades of combined marketing experience compressed into strategies that deliver immediate impact and long-term growth.",
+      title: "Data-Driven Excellence",
+      description: "Advanced analytics and market intelligence combined with creative expertise to deliver campaigns that consistently outperform industry benchmarks.",
       color: "from-primary to-innovation"
     },
     {

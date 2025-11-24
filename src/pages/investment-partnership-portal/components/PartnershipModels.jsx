@@ -23,7 +23,10 @@ const PartnershipModels = () => {
         'Co-branding opportunities for portfolio companies'
       ],
       idealFor: 'Institutional investors, Family offices, Strategic corporate investors',
-      color: 'primary'
+      // Brand-aligned solid color
+      solidColor: '#1A237E',
+      // Brand-aligned gradient (Navy to lighter Navy)
+      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #3949AB 100%)'
     },
     {
       id: 'revenue',
@@ -42,7 +45,10 @@ const PartnershipModels = () => {
         'Participation in specific high-margin projects'
       ],
       idealFor: 'Angel investors, HNIs, Marketing professionals seeking passive income',
-      color: 'success'
+      // Brand-aligned solid color (Yellow)
+      solidColor: '#F7D920',
+      // Brand-aligned gradient (Yellow to Gold)
+      gradientStyle: 'linear-gradient(135deg, #F7D920 0%, #F9A825 100%)'
     },
     {
       id: 'project',
@@ -61,7 +67,10 @@ const PartnershipModels = () => {
         'Option to reinvest in subsequent projects'
       ],
       idealFor: 'First-time investors, Risk-averse partners, Industry professionals',
-      color: 'innovation'
+      // Brand-aligned solid color (Navy with blue tint)
+      solidColor: '#283593',
+      // Brand-aligned gradient (Navy to Blue)
+      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #1976D2 100%)'
     },
     {
       id: 'market',
@@ -80,11 +89,14 @@ const PartnershipModels = () => {
         'Co-ownership of market entry IP and processes'
       ],
       idealFor: 'International brands, Import/export businesses, Global investors',
-      color: 'accent'
+      // Brand-aligned solid color (Navy with purple tint)
+      solidColor: '#311B92',
+      // Brand-aligned gradient (Navy to Purple with Yellow accent)
+      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #4527A0 70%, #F7D920 100%)'
     }
   ];
 
-  const currentModel = models?.find(m => m?.id === selectedModel);
+  const currentModel = models?.find((m) => m?.id === selectedModel);
 
   return (
     <section className="py-20 bg-background">
@@ -103,34 +115,40 @@ const PartnershipModels = () => {
         </div>
 
         <div className="grid lg:grid-cols-4 gap-4 mb-12">
-          {models?.map((model) => (
-            <button
-              key={model?.id}
-              onClick={() => setSelectedModel(model?.id)}
-              className={`p-6 rounded-xl border-2 transition-all text-left ${
-                selectedModel === model?.id
-                  ? 'border-primary bg-primary/5 shadow-lg'
-                  : 'border-border bg-card hover:border-primary/50'
-              }`}
-            >
+          {models?.map((model) =>
+          <button
+            key={model?.id}
+            onClick={() => setSelectedModel(model?.id)}
+            className={`p-6 rounded-xl border-2 transition-all text-left ${
+            selectedModel === model?.id ?
+            'border-primary bg-primary/5 shadow-lg' :
+            'border-border bg-card hover:border-primary/50'}`
+            }>
+
               <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                selectedModel === model?.id ? 'bg-primary' : 'bg-muted'
-              }`}>
-                <Icon 
-                  name={model?.icon} 
-                  size={24} 
-                  color={selectedModel === model?.id ? '#FFFFFF' : 'var(--color-muted-foreground)'} 
-                />
+            selectedModel === model?.id ? 'bg-primary' : 'bg-muted'}`
+            }>
+                <Icon
+                name={model?.icon}
+                size={24}
+                color={selectedModel === model?.id ? '#FFFFFF' : 'var(--color-muted-foreground)'} />
+
               </div>
               <h3 className="text-lg font-bold text-foreground mb-1">{model?.title}</h3>
               <p className="text-sm text-muted-foreground">{model?.subtitle}</p>
             </button>
-          ))}
+          )}
         </div>
 
         {currentModel && (
-          <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden">
-            <div className={`bg-gradient-to-r from-${currentModel?.color} to-${currentModel?.color}/80 p-8 text-white`}>
+        <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden border-solid">
+            <div 
+              className="p-8 text-white"
+              style={{ 
+                background: currentModel?.gradientStyle,
+                boxShadow: '0 4px 20px rgba(26, 35, 126, 0.15)'
+              }}
+            >
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{currentModel?.title}</h3>
@@ -159,6 +177,17 @@ const PartnershipModels = () => {
                   <div className="text-xl font-bold">{currentModel?.returns}</div>
                 </div>
               </div>
+
+              {/* Brand color accent bar */}
+              <div className="mt-6 h-1 w-full rounded-full bg-white/20">
+                <div 
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{ 
+                    width: '75%',
+                    background: currentModel?.id === 'revenue' ? '#1A237E' : '#F7D920'
+                  }}
+                />
+              </div>
             </div>
 
             <div className="p-8">
@@ -169,12 +198,12 @@ const PartnershipModels = () => {
                     Key Features & Benefits
                   </h4>
                   <ul className="space-y-3">
-                    {currentModel?.features?.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
+                    {currentModel?.features?.map((feature, index) =>
+                  <li key={index} className="flex items-start gap-3">
                         <Icon name="ArrowRight" size={16} color="var(--color-primary)" className="mt-1 flex-shrink-0" />
                         <span className="text-muted-foreground">{feature}</span>
                       </li>
-                    ))}
+                  )}
                   </ul>
                 </div>
 
@@ -189,21 +218,21 @@ const PartnershipModels = () => {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
-                      variant="default"
-                      size="default"
-                      fullWidth
-                      iconName="MessageSquare"
-                      iconPosition="left"
-                    >
+                    variant="default"
+                    size="default"
+                    fullWidth
+                    iconName="MessageSquare"
+                    iconPosition="left">
+
                       Discuss This Model
                     </Button>
                     <Button
-                      variant="outline"
-                      size="default"
-                      fullWidth
-                      iconName="FileText"
-                      iconPosition="left"
-                    >
+                    variant="outline"
+                    size="default"
+                    fullWidth
+                    iconName="FileText"
+                    iconPosition="left">
+
                       Download Details
                     </Button>
                   </div>
@@ -213,8 +242,8 @@ const PartnershipModels = () => {
           </div>
         )}
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PartnershipModels;

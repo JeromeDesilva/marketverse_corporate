@@ -117,6 +117,17 @@ const Footer = () => {
             <div className="text-muted-foreground text-sm text-center md:text-left">
               <p>&copy; {currentYear} Marketverse. All rights reserved.</p>
               <p className="mt-1">Making growth inevitable since 2020</p>
+              <p className="mt-2 text-xs">
+                web Development and maintained by{' '}
+                <a 
+                  href="https://trinitycreativeservices.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  Trinity Creative Services
+                </a>
+              </p>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">

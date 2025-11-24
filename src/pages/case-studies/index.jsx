@@ -39,29 +39,12 @@ const CaseStudies = () => {
     route: "/korean-super-store-case-study"
   },
   {
-    id: 2,
-    title: "Tech Startup: From Zero to Market Leader",
-    description: "Complete brand transformation and digital marketing strategy that positioned a B2B SaaS startup as industry thought leader. Achieved 500% increase in qualified leads within 8 months.",
-    image: "https://images.unsplash.com/photo-1724438143554-989f98ca3fec",
-    imageAlt: "Modern tech startup office with collaborative workspace, glass walls, standing desks, and team members working on laptops in bright natural lighting",
-    industry: "Technology",
-    services: ["Brand Building", "Digital Marketing", "Content Strategy", "SEO & Analytics"],
-    metrics: [
-    { label: "Lead Growth", value: "500%" },
-    { label: "Conversion Rate", value: "12%" },
-    { label: "Market Position", value: "Top 3" }],
-
-    duration: "8 months",
-    featured: false,
-    route: null
-  },
-  {
     id: 3,
-    title: "Fashion Brand: Social Media Domination",
-    description: "Strategic social media campaign that transformed regional fashion brand into national phenomenon. Created viral content strategy resulting in 2M+ followers and 400% sales increase.",
-    image: "https://images.unsplash.com/photo-1621261027519-a71ac66d5a68",
-    imageAlt: "Elegant fashion boutique interior with modern minimalist design, clothing racks displaying contemporary fashion, and professional lighting highlighting premium garments",
-    industry: "Fashion",
+    title: "MyOppa E-commerce Brand: Digital Transformation",
+    description: "Complete digital transformation of Korean beauty and lifestyle e-commerce platform. Strategic social media campaigns and influencer partnerships resulted in 400% sales growth and 2M+ engaged followers.",
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1df2d3dec-1764004137323.png",
+    imageAlt: "Modern e-commerce platform interface showing Korean beauty products, sleek design, and shopping cart with engaged users browsing on mobile and desktop devices",
+    industry: "E-commerce",
     services: ["Social Media", "Content Strategy", "Influencer Marketing", "Brand Building"],
     metrics: [
     { label: "Followers", value: "2M+" },
@@ -73,29 +56,12 @@ const CaseStudies = () => {
     route: null
   },
   {
-    id: 4,
-    title: "Healthcare Platform: Trust Building Campaign",
-    description: "Comprehensive digital strategy for healthcare platform focusing on trust building and patient acquisition. Achieved 250% increase in user registrations through targeted content marketing.",
-    image: "https://images.unsplash.com/photo-1636973879067-9404573bdc78",
-    imageAlt: "Modern healthcare facility reception area with clean white walls, comfortable seating, digital displays, and professional medical staff assisting patients",
-    industry: "Healthcare",
-    services: ["Content Strategy", "Digital Marketing", "SEO & Analytics", "Brand Building"],
-    metrics: [
-    { label: "User Growth", value: "250%" },
-    { label: "Trust Score", value: "4.8/5" },
-    { label: "Retention", value: "85%" }],
-
-    duration: "9 months",
-    featured: false,
-    route: null
-  },
-  {
     id: 5,
-    title: "Food Delivery: Market Expansion Strategy",
+    title: "Brand Prodel delivery launch last mile connectivity quick commence",
     description: "Multi-city expansion strategy for food delivery platform. Created localized marketing campaigns that resulted in successful entry into 15 new cities with 180% order volume growth.",
     image: "https://images.unsplash.com/photo-1659353741121-15d88d99c64e",
     imageAlt: "Professional food delivery service showing delivery person in branded uniform holding insulated food bag, with modern restaurant kitchen in background",
-    industry: "Food & Beverage",
+    industry: "Delivery",
     services: ["Market Entry", "Digital Marketing", "Social Media", "Content Strategy"],
     metrics: [
     { label: "Cities Entered", value: "15" },
@@ -130,36 +96,24 @@ const CaseStudies = () => {
     id: 1,
     clientName: "Priya Sharma",
     clientRole: "Founder & CEO",
-    company: "TechVision Solutions",
+    company: "MyOppa E-commerce",
     clientImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1bac64874-1763295443777.png",
     clientImageAlt: "Professional headshot of Indian woman with long black hair wearing navy blue business suit and warm smile",
     thumbnail: "https://images.unsplash.com/photo-1644507884976-43a96ede52d2",
     thumbnailAlt: "Professional business meeting room with modern furniture, large windows, and executive discussing strategy with confident posture",
-    quote: "Marketverse transformed our brand from a regional player to a national leader. Their strategic approach and execution excellence delivered results beyond our expectations. The 500% lead growth speaks for itself.",
+    quote: "Marketverse transformed our e-commerce brand from a regional player to a national leader. Their strategic approach and execution excellence delivered results beyond our expectations. The 400% sales growth speaks for itself.",
     rating: 5
   },
   {
     id: 2,
     clientName: "Rajesh Kumar",
     clientRole: "Marketing Director",
-    company: "StyleHub Fashion",
+    company: "Korean Super Store",
     clientImage: "https://img.rocket.new/generatedImages/rocket_gen_img_18c23f11e-1763293073674.png",
     clientImageAlt: "Professional headshot of Indian man with short black hair wearing charcoal gray suit and confident expression",
     thumbnail: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd",
     thumbnailAlt: "Creative marketing team brainstorming session with diverse professionals around conference table, whiteboards filled with strategy diagrams",
-    quote: "The social media campaign created by Marketverse was nothing short of phenomenal. We went from 50K to 2M followers in 10 months, and our sales quadrupled. Their understanding of fashion industry dynamics is exceptional.",
-    rating: 5
-  },
-  {
-    id: 3,
-    clientName: "Dr. Anita Desai",
-    clientRole: "Chief Operating Officer",
-    company: "HealthFirst Platform",
-    clientImage: "https://img.rocket.new/generatedImages/rocket_gen_img_155748a5d-1763296653785.png",
-    clientImageAlt: "Professional headshot of Indian woman doctor with shoulder-length black hair wearing white medical coat and stethoscope with warm professional smile",
-    thumbnail: "https://images.unsplash.com/photo-1666886573421-d19e546cfc4e",
-    thumbnailAlt: "Healthcare professionals in modern medical facility discussing patient care strategies with digital tablets and medical charts",
-    quote: "Building trust in healthcare is challenging, but Marketverse's content strategy and digital approach helped us achieve 250% user growth while maintaining our credibility. Their team truly understands healthcare marketing.",
+    quote: "The market entry campaign created by Marketverse was nothing short of phenomenal. We went from zero to 50K customers in 12 months, and our revenue tripled. Their understanding of Korean retail dynamics is exceptional.",
     rating: 5
   }];
 
@@ -200,20 +154,23 @@ const CaseStudies = () => {
 
   const industryOptions = [
   { value: 'retail', label: 'Retail' },
-  { value: 'technology', label: 'Technology' },
+  { value: 'ecommerce', label: 'E-commerce' },
+  { value: 'delivery', label: 'Delivery' },
   { value: 'fashion', label: 'Fashion' },
-  { value: 'healthcare', label: 'Healthcare' },
   { value: 'food', label: 'Food & Beverage' },
   { value: 'education', label: 'Education' }];
 
 
   const serviceOptions = [
-  { value: 'brand', label: 'Brand Building' },
-  { value: 'digital', label: 'Digital Marketing' },
-  { value: 'market', label: 'Market Entry' },
-  { value: 'content', label: 'Content Strategy' },
-  { value: 'social', label: 'Social Media' },
-  { value: 'seo', label: 'SEO & Analytics' }];
+  { value: 'market-research', label: 'Market Research & Analytics' },
+  { value: 'competitive-intelligence', label: 'Competitive Intelligence & Industry Analysis' },
+  { value: 'brand-strategy', label: 'Brand Strategy & Positioning' },
+  { value: 'customer-sentiment', label: 'Customer Sentiment & Behavior Analysis' },
+  { value: 'brand-evolution', label: 'Brand Evolution & Market Positioning' },
+  { value: 'go-to-market', label: 'Go-to-Market Strategy & Launch Planning' },
+  { value: 'import-global', label: 'Import & Product Sourcing - Global Excellence' },
+  { value: 'import-premium', label: 'Import & Product Sourcing - Premium Selection' },
+  { value: 'import-value', label: 'Import & Product Sourcing - Value Optimization' }];
 
 
   const resultOptions = [
