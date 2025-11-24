@@ -12,6 +12,8 @@ const Header = () => {
     { path: '/services', label: 'Services' },
     { path: '/case-studies', label: 'Case Studies' },
     { path: '/about', label: 'About' },
+    { path: '/investment-partnership-portal', label: 'Investor' },
+    { path: '/investment-partnership-portal', label: 'Partner' },
     { path: '/contact', label: 'Contact' }
   ];
 

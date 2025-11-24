@@ -5,38 +5,7 @@ import Button from '../../../components/ui/Button';
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const [visitorType, setVisitorType] = useState('client');
   const [currentMetric, setCurrentMetric] = useState(0);
-
-  const visitorTypes = {
-    client: {
-      title: "Transform Your Brand Into Market Leaders",
-      subtitle: "100+ man-years of marketing expertise compressed into strategies that make growth inevitable",
-      cta: "Book Free Consultation",
-      ctaAction: () => navigate('/contact'),
-      secondaryCta: "View Success Stories",
-      secondaryAction: () => navigate('/case-studies'),
-      icon: "TrendingUp"
-    },
-    investor: {
-      title: "Partner With India\'s Marketing Powerhouse",
-      subtitle: "Strategic investment opportunities in proven marketing excellence with measurable ROI",
-      cta: "Explore Partnership",
-      ctaAction: () => navigate('/investment-partnership-portal'),
-      secondaryCta: "View Portfolio",
-      secondaryAction: () => navigate('/case-studies'),
-      icon: "Briefcase"
-    },
-    partner: {
-      title: "Build Market Categories Together",
-      subtitle: "Collaborate with experts who turn ambitious brands into industry benchmarks",
-      cta: "Discuss Collaboration",
-      ctaAction: () => navigate('/contact'),
-      secondaryCta: "Our Services",
-      secondaryAction: () => navigate('/services'),
-      icon: "Users"
-    }
-  };
 
   const metrics = [
     { value: 100, label: "Man-Years Expertise", suffix: "+" },
@@ -52,8 +21,6 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const currentContent = visitorTypes?.[visitorType];
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-innovation geometric-pattern">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(232,185,49,0.1),transparent_50%)]" />
@@ -61,34 +28,18 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left space-y-8">
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
-              {Object.keys(visitorTypes)?.map((type) => (
-                <button
-                  key={type}
-                  onClick={() => setVisitorType(type)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                    visitorType === type
-                      ? 'bg-accent text-accent-foreground shadow-lg'
-                      : 'bg-white/10 text-white hover:bg-white/20'
-                  }`}
-                >
-                  {type?.charAt(0)?.toUpperCase() + type?.slice(1)}
-                </button>
-              ))}
-            </div>
-
             <div className="space-y-4">
               <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full">
-                <Icon name={currentContent?.icon} size={20} color="#E8B931" />
+                <Icon name="TrendingUp" size={20} color="#E8B931" />
                 <span className="text-secondary text-sm font-semibold">Marketing Excellence</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                {currentContent?.title}
+                Transform Your Brand Into Market Leaders
               </h1>
 
               <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto lg:mx-0">
-                {currentContent?.subtitle}
+                100+ man-years of marketing expertise compressed into strategies that make growth inevitable
               </p>
             </div>
 
@@ -98,20 +49,20 @@ const HeroSection = () => {
                 size="lg"
                 iconName="ArrowRight"
                 iconPosition="right"
-                onClick={currentContent?.ctaAction}
+                onClick={() => navigate('/contact')}
                 className="shadow-xl"
               >
-                {currentContent?.cta}
+                Book Free Consultation
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 iconName="Eye"
                 iconPosition="left"
-                onClick={currentContent?.secondaryAction}
+                onClick={() => navigate('/case-studies')}
                 className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
               >
-                {currentContent?.secondaryCta}
+                View Success Stories
               </Button>
             </div>
 
