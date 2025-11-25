@@ -23,7 +23,7 @@ const ContactForm = () => {
 
   const inquiryTypeOptions = [
     { value: 'brand-building', label: 'Brand Building & Strategy' },
-    { value: 'digital-marketing', label: 'Digital Marketing Services' },
+   // { value: 'digital-marketing', label: 'Digital Marketing Services' },
     { value: 'market-entry', label: 'Market Entry & Expansion' },
     { value: 'import-sourcing', label: 'Import & Sourcing Solutions' },
     { value: 'investment', label: 'Investment Partnership' },

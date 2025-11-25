@@ -6,8 +6,8 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      primary: 'hello@marketverse.in',
-      secondary: 'support@marketverse.in',
+      primary: 'hello@marketverse.co.in',
+      secondary: 'support@marketverse.co.in',
       description: 'For general inquiries and support'
     },
     {
