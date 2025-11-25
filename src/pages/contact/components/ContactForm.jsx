@@ -251,6 +251,38 @@ const ContactForm = () => {
         </div>
 
         <div>
+  <Checkbox
+    name="agreeToTerms"
+    checked={formData?.agreeToTerms}
+    onChange={handleChange}
+    required
+    error={errors?.agreeToTerms}
+    label={
+      <span className="text-sm text-gray-700">
+        I agree to the{" "}
+        <a
+          href="/terms-and-conditions"
+          target="_blank"
+          className="text-blue-600 underline hover:text-blue-800"
+        >
+          terms and conditions
+        </a>{" "}
+        and{" "}
+        <a
+          href="/privacy-policy"
+          target="_blank"
+          className="text-blue-600 underline hover:text-blue-800"
+        >
+          privacy policy
+        </a>
+        <span className="text-red-500"> *</span>
+      </span>
+    }
+  />
+</div>
+
+
+     {/* <div>
           <Checkbox
             label="I agree to the terms and conditions and privacy policy"
             checked={formData?.agreeToTerms}
@@ -259,7 +291,7 @@ const ContactForm = () => {
             error={errors?.agreeToTerms}
             required
           />
-        </div>
+        </div> */} 
 
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Button
