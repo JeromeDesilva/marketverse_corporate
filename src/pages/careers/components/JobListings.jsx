@@ -10,7 +10,10 @@ const JobListings = () => {
     { id: 'marketing', label: 'Marketing' },
     { id: 'strategy', label: 'Strategy' },
     { id: 'business', label: 'Business Development' },
-    { id: 'creative', label: 'Creative' }
+    { id: 'creative', label: 'Creative' },
+    { id: 'operations', label: 'Operations' },
+    { id: 'franchise', label: 'Franchise Management' },
+    { id: 'support', label: 'Customer Support' }
   ];
 
   const jobs = [
@@ -27,14 +30,14 @@ const JobListings = () => {
     },
     {
       id: 2,
-      title: 'Digital Marketing Specialist',
+      title: 'Outreach & Sponsor Relations Manager',
       category: 'marketing',
-      location: 'Los Angeles',
+      location: 'Los Angeles / Remote',
       type: 'Full-time',
       department: 'Marketing',
-      description: 'Execute and optimize digital marketing campaigns across multiple platforms. Focus on SEO, SEM, and social media marketing.',
-      requirements: ['3+ years digital marketing experience', 'Google Ads & Facebook Ads certified', 'Strong content creation skills'],
-      alt: 'Marketing specialist analyzing social media performance metrics dashboard'
+      description: 'Develop and maintain strategic partnerships with sponsors and brand ambassadors. Create outreach campaigns to expand brand presence and drive collaboration opportunities.',
+      requirements: ['4+ years experience in outreach or partnership management', 'Strong networking and relationship-building skills', 'Experience with sponsor acquisition and retention', 'Excellent presentation and negotiation abilities'],
+      alt: 'Outreach manager presenting partnership proposal to potential sponsors in modern meeting room'
     },
     {
       id: 3,
@@ -49,14 +52,14 @@ const JobListings = () => {
     },
     {
       id: 4,
-      title: 'Content Marketing Lead',
+      title: 'Public Relations Specialist',
       category: 'marketing',
-      location: 'Remote',
+      location: 'New York / Remote',
       type: 'Full-time',
       department: 'Marketing',
-      description: 'Develop and execute content strategies that drive engagement and conversions. Manage content team and editorial calendar.',
-      requirements: ['5+ years content marketing experience', 'Strong writing and editing skills', 'Team leadership experience'],
-      alt: 'Content team collaborating on editorial calendar and campaign strategy'
+      description: 'Manage company reputation and media relations. Develop PR strategies, write press releases, and coordinate with media outlets to enhance brand visibility.',
+      requirements: ['3+ years PR or communications experience', 'Strong media relations and crisis management skills', 'Excellent writing and storytelling abilities', 'Experience with press release distribution and media pitching'],
+      alt: 'Public relations specialist conducting media interview and managing press communications'
     },
     {
       id: 5,
@@ -70,15 +73,59 @@ const JobListings = () => {
       alt: 'Creative director presenting campaign concept boards to team'
     },
     {
+      id: 7,
+      title: 'Operations Manager',
+      category: 'operations',
+      location: 'Remote / Chicago',
+      type: 'Full-time',
+      department: 'Operations',
+      description: 'Oversee daily operations and streamline business processes. Implement operational strategies to improve efficiency and productivity across all departments.',
+      requirements: ['5+ years operations management experience', 'Strong project management skills', 'Process optimization expertise', 'Leadership and team coordination abilities'],
+      alt: 'Operations manager reviewing workflow processes and efficiency metrics on digital dashboard'
+    },
+    {
+      id: 8,
+      title: 'Franchise Manager',
+      category: 'franchise',
+      location: 'Dallas / Hybrid',
+      type: 'Full-time',
+      department: 'Franchise Development',
+      description: 'Manage franchise operations and support franchise partners. Develop franchise systems, provide ongoing training, and ensure brand consistency across locations.',
+      requirements: ['4+ years franchise management experience', 'Strong communication and relationship building', 'Knowledge of franchise regulations and compliance', 'Business development and training capabilities'],
+      alt: 'Franchise manager conducting training session with franchise partners in modern conference room'
+    },
+    {
       id: 6,
-      title: 'Marketing Analyst',
+      title: 'Event Management Coordinator',
       category: 'marketing',
       location: 'Remote / Boston',
       type: 'Full-time',
-      department: 'Analytics',
-      description: 'Analyze marketing performance data and provide actionable insights. Build dashboards and reporting systems.',
-      requirements: ['2+ years analytics experience', 'Proficiency in Google Analytics, Tableau', 'SQL knowledge preferred'],
-      alt: 'Marketing analyst reviewing performance dashboards showing ROI metrics'
+      department: 'Marketing',
+      description: 'Plan, coordinate, and execute corporate events, conferences, and brand activations. Manage event logistics, vendor relationships, and ensure seamless execution of marketing events.',
+      requirements: ['3+ years event planning or coordination experience', 'Strong project management and organizational skills', 'Experience with event budgeting and vendor management', 'Ability to handle multiple events simultaneously'],
+      alt: 'Event coordinator managing corporate event setup and coordinating with vendors at conference venue'
+    },
+    {
+      id: 9,
+      title: 'Customer Care Specialist - Domestic (Bilingual/Multilingual)',
+      category: 'support',
+      location: 'Remote / Multiple Locations',
+      type: 'Full-time',
+      department: 'Customer Support',
+      description: 'Provide exceptional customer support to domestic clients in multiple languages. Handle inquiries, resolve issues, and ensure customer satisfaction through various communication channels.',
+      requirements: ['Fluency in English plus at least one additional language (Spanish, Mandarin, Korean, or others)', '2+ years customer service experience', 'Strong problem-solving and communication skills', 'Experience with CRM systems and support ticketing platforms'],
+      alt: 'Bilingual customer care specialist assisting customers through headset in modern support center'
+    },
+    {
+      id: 10,
+      title: 'International Customer Support Representative',
+      category: 'support',
+      location: 'Remote / Global Coverage',
+      type: 'Full-time',
+      department: 'Customer Support',
+      description: 'Deliver world-class customer support to international clients across different time zones. Manage complex inquiries, coordinate with global teams, and ensure seamless service delivery.',
+      requirements: ['3+ years international customer support experience', 'Excellent English communication skills (additional languages a plus)', 'Cultural awareness and adaptability', 'Experience with global support operations and time zone management', 'Strong technical troubleshooting abilities'],
+      alt: 'International customer support representative providing 24/7 assistance to global clients from modern workspace'
     }
   ];
 

@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
   const currentTestimonial = testimonials?.[activeTestimonial];
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-muted/30 to-background">
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-muted/30 to-background hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-partnership/10 rounded-full mb-6">

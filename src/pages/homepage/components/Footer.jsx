@@ -20,9 +20,9 @@ const Footer = () => {
     ],
     resources: [
       { label: "Contact Us", path: "/contact" },
-      { label: "Privacy Policy", path: "/contact" },
-      { label: "Terms of Service", path: "/contact" },
-      { label: "Careers", path: "/contact" }
+      { label: "Privacy Policy", path: "/privacy-policy" },
+      { label: "Terms of Service", path: "/terms-of-service" },
+      { label: "Careers", path: "/careers" }
     ]
   };
 
@@ -130,13 +130,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
               <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
               </Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/cookie-policy" className="text-muted-foreground hover:text-primary transition-colors">
                 Cookie Policy
               </Link>
             </div>

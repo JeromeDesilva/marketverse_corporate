@@ -262,7 +262,7 @@ const CaseStudies = () => {
           </section>
 
           {/* Filter Section */}
-          <section className="py-12 px-4">
+          <section className="py-12 px-4 hidden">
             <div className="max-w-7xl mx-auto">
               <FilterSection
                 filters={filters}
@@ -334,16 +334,16 @@ const CaseStudies = () => {
           </section>
 
           {/* Comparison Tool */}
-          <section className="py-12 px-4">
+          <section className="py-12 px-4 hidden">
             <div className="max-w-7xl mx-auto">
               <ComparisonTool caseStudies={caseStudiesData} />
             </div>
           </section>
 
           {/* Client Testimonials */}
-          <section className="py-12 px-4 bg-card">
+          <section className="py-12 px-4 bg-card hidden">
             <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-12">
+              <div className="text-center mb-12 hidden">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-4">
                   <Icon name="MessageSquare" size={20} className="text-secondary" />
                   <span className="text-sm font-semibold text-secondary">Client Testimonials</span>
@@ -363,7 +363,7 @@ const CaseStudies = () => {
           </section>
 
           {/* Download Section */}
-          <section className="py-12 px-4">
+          <section className="py-12 px-4 hidden">
             <div className="max-w-4xl mx-auto">
               <DownloadSection caseStudy={caseStudiesData?.[0]} />
             </div>

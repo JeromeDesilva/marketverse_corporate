@@ -11,6 +11,9 @@ import About from './pages/about';
 import CaseStudies from './pages/case-studies';
 import Homepage from './pages/homepage';
 import Careers from './pages/careers';
+import CookiePolicy from './pages/cookie-policy';
+import PrivacyPolicy from './pages/privacy-policy';
+import TermsOfService from './pages/terms-of-service';
 
 const Routes = () => {
   return (
@@ -28,6 +31,9 @@ const Routes = () => {
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>

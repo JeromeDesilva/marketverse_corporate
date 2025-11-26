@@ -135,7 +135,7 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-white hidden">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/5 px-4 py-2 rounded-full mb-6">
