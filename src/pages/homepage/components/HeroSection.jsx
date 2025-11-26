@@ -87,7 +87,7 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
-                Strategic marketing solutions that transform ambitious brands into industry leaders through innovation and expertise
+                Strategic marketing solutions that help ambitious brands achieve significant growth through data-driven innovation and proven expertise
               </p>
             </div>
 

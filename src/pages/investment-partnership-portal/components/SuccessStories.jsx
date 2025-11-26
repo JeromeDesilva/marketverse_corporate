@@ -207,7 +207,7 @@ const SuccessStories = () => {
 
         {/* Testimonials Section */}
         <div>
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 hidden">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
               <Icon name="MessageSquare" size={18} color="var(--color-primary)" />
               <span className="text-sm font-medium text-primary">Investor Testimonials</span>
@@ -220,7 +220,7 @@ const SuccessStories = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {testimonials?.map((testimonial, index) =>
-            <div key={index} className="group bg-card rounded-2xl border border-border p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+            <div key={index} className="group bg-card rounded-2xl border border-border p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10">

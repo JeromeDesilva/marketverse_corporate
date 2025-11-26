@@ -45,10 +45,10 @@ const VisionMissionSection = () => {
             </div>
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">Our Vision</h3>
             <p className="text-lg text-white/90 leading-relaxed mb-4">
-              To be recognized as India's premier marketing and brand-building powerhouse that transforms ambitious brands into market leaders through strategic boldness and proven expertise.
+              To be recognized as a trusted marketing and brand-building agency that helps ambitious brands achieve market leadership through strategic expertise and proven methodologies.
             </p>
             <p className="text-lg text-white/90 leading-relaxed">
-              We envision a future where every great product gets the visibility it deserves, where marketing confidence replaces marketing uncertainty, and where growth becomes inevitable through intelligent strategy execution.
+              We envision a future where every great product gets the visibility it deserves, where marketing confidence replaces marketing uncertainty, and where growth becomes more achievable through intelligent strategy execution.
             </p>
           </div>
 

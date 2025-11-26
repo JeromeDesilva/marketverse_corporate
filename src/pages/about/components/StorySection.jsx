@@ -31,7 +31,7 @@ const StorySection = () => {
   {
     year: "2024-2025",
     title: "Industry Leadership",
-    description: "Positioned as India's premier marketing powerhouse with 100+ man-years of compressed expertise. Leading market disruption and brand transformation.",
+    description: "Positioned as a respected marketing agency with collective team expertise. Leading market innovation and brand transformation.",
     icon: "TrendingUp"
   }];
 
@@ -51,15 +51,15 @@ const StorySection = () => {
             </h2>
 
             <p className="text-lg text-[var(--color-muted-foreground)] mb-6 leading-relaxed">
-              Marketverse embodies the convergence of marketing intelligence and market disruption. We represent strategic boldness - confident enough to promise transformation, experienced enough to deliver it.
+              Marketverse embodies the convergence of marketing intelligence and market disruption. We represent strategic boldness - confident in our approach, experienced in execution.
             </p>
 
             <p className="text-lg text-[var(--color-muted-foreground)] mb-6 leading-relaxed">
-              Our brand personality balances professional authority with entrepreneurial energy. We speak to ambitious brands ready to break through market noise and international companies seeking authentic Indian market entry.
+              Our brand personality balances professional authority with entrepreneurial energy. We work with ambitious brands ready to break through market noise and international companies seeking authentic Indian market entry.
             </p>
 
             <p className="text-lg text-[var(--color-muted-foreground)] leading-relaxed">
-              We are the bridge between global trends and local resonance, between marketing theory and measurable results. With 100+ man-years of expertise compressed into a 5-year journey, we make growth inevitable rather than hopeful.
+              We are the bridge between global trends and local resonance, between marketing theory and measurable results. With years of collective team experience, we help make growth more predictable through data-driven strategies.
             </p>
           </div>
 
@@ -72,8 +72,8 @@ const StorySection = () => {
 
             </div>
             <div className="absolute -bottom-6 -right-6 bg-[var(--color-accent)] text-white p-6 rounded-xl shadow-xl">
-              <div className="text-4xl font-bold mb-1">100+</div>
-              <div className="text-sm font-medium">Man-Years Expertise</div>
+              <div className="text-4xl font-bold mb-1">5+</div>
+              <div className="text-sm font-medium">Years in Business</div>
             </div>
           </div>
         </div>

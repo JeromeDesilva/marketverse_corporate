@@ -6,37 +6,37 @@ const WhyChooseUs = () => {
     {
       icon: "Award",
       title: "Data-Driven Excellence",
-      description: "Advanced analytics and market intelligence combined with creative expertise to deliver campaigns that consistently outperform industry benchmarks.",
+      description: "Advanced analytics and market intelligence combined with creative expertise to deliver campaigns designed to meet and exceed industry standards.",
       color: "from-primary to-innovation"
     },
     {
       icon: "Target",
-      title: "Measurable Results",
-      description: "Every campaign is tracked, analyzed, and optimized for maximum ROI. We don't just promise growth—we guarantee measurable outcomes.",
+      title: "Measurable Results Focus",
+      description: "Every campaign is tracked, analyzed, and optimized for return on investment. We focus on delivering data-backed outcomes aligned with your business goals.",
       color: "from-accent to-secondary"
     },
     {
       icon: "Globe",
       title: "Cultural Market Intelligence",
-      description: "Deep understanding of Indian market dynamics combined with global best practices for authentic local resonance.",
+      description: "Understanding of Indian market dynamics combined with global best practices to help achieve authentic local resonance.",
       color: "from-trust to-success"
     },
     {
       icon: "Zap",
       title: "End-to-End Solutions",
-      description: "From strategy to execution, we handle every aspect of your marketing journey with integrated, comprehensive services.",
+      description: "From strategy to execution, we handle every aspect of your marketing journey with integrated, comprehensive services tailored to your needs.",
       color: "from-partnership to-accent"
     },
     {
       icon: "Users",
-      title: "Dedicated Partnership",
-      description: "You\'re not just a client—you\'re a partner. We invest in your success with dedicated teams and personalized strategies.",
+      title: "Collaborative Partnership",
+      description: "You\'re not just a client—you\'re a partner. We work closely with your teams and provide dedicated support to help achieve your marketing objectives.",
       color: "from-secondary to-warning"
     },
     {
       icon: "TrendingUp",
-      title: "Proven Track Record",
-      description: "50+ brands transformed, 300% average growth rate, and 98% client satisfaction. Our results speak for themselves.",
+      title: "Proven Experience",
+      description: "50+ brands served with demonstrated growth results and high client satisfaction across diverse industries and marketing campaigns.",
       color: "from-innovation to-primary"
     }
   ];
@@ -50,10 +50,10 @@ const WhyChooseUs = () => {
             <span className="text-success text-sm font-semibold">Why Marketverse</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Marketing Confidence You Can Trust
+            Marketing Partnership You Can Trust
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We don't just execute campaigns—we build market categories and transform ambitious brands into industry benchmarks
+            We help build strong brands and deliver strategic campaigns that drive business growth and enhance market presence
           </p>
         </div>
 
@@ -82,19 +82,19 @@ const WhyChooseUs = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                Great Products Deserve Great Visibility
+                Great Products Deserve Strategic Marketing
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Your product is exceptional. Your marketing should be too. Let's make growth inevitable together.
+                Your product is exceptional. Your marketing should effectively showcase that value. Let's work together toward sustainable growth.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2">
                   <Icon name="CheckCircle2" size={20} color="var(--color-success)" />
-                  <span className="text-sm font-medium text-foreground">No Long-Term Contracts</span>
+                  <span className="text-sm font-medium text-foreground">Flexible Contracts Available</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="CheckCircle2" size={20} color="var(--color-success)" />
-                  <span className="text-sm font-medium text-foreground">Transparent Pricing</span>
+                  <span className="text-sm font-medium text-foreground">Clear, Transparent Pricing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="CheckCircle2" size={20} color="var(--color-success)" />
@@ -113,8 +113,8 @@ const WhyChooseUs = () => {
                 <div className="text-sm text-muted-foreground">Brands Served</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
-                <div className="text-4xl font-bold text-success mb-2">300%</div>
-                <div className="text-sm text-muted-foreground">Avg Growth</div>
+                <div className="text-4xl font-bold text-success mb-2">2-5x</div>
+                <div className="text-sm text-muted-foreground">Typical Growth Range</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
                 <div className="text-4xl font-bold text-secondary mb-2">98%</div>

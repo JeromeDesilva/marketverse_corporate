@@ -4,28 +4,28 @@ import Button from '../../../components/ui/Button';
 
 const CTASection = () => {
   const contactMethods = [
-    {
-      icon: 'Phone',
-      title: 'Call Us',
-      value: '+91 98765 43210',
-      description: 'Mon-Sat, 9:00 AM - 7:00 PM IST',
-      action: 'Call Now'
-    },
-    {
-      icon: 'Mail',
-      title: 'Email Us',
-      value: 'invest@marketverse.in',
-      description: 'Response within 24 hours',
-      action: 'Send Email'
-    },
-    {
-      icon: 'MapPin',
-      title: 'Visit Office',
-      value: 'Mumbai, Maharashtra',
-      description: 'By appointment only',
-      action: 'Get Directions'
-    }
-  ];
+  {
+    icon: 'Phone',
+    title: 'Call Us',
+    value: '+91 98765 43210',
+    description: 'Mon-Sat, 9:00 AM - 7:00 PM IST',
+    action: 'Call Now'
+  },
+  {
+    icon: 'Mail',
+    title: 'Email Us',
+    value: 'invest@marketverse.in',
+    description: 'Response within 24 hours',
+    action: 'Send Email'
+  },
+  {
+    icon: 'MapPin',
+    title: 'Visit Office',
+    value: 'Mumbai, Maharashtra',
+    description: 'By appointment only',
+    action: 'Get Directions'
+  }];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-innovation relative overflow-hidden">
@@ -41,8 +41,8 @@ const CTASection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {contactMethods?.map((method, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 p-6 hover:bg-white/15 transition-all">
+          {contactMethods?.map((method, index) =>
+          <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 p-6 hover:bg-white/15 transition-all">
               <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center mb-4">
                 <Icon name={method?.icon} size={24} color="#FFFFFF" />
               </div>
@@ -54,7 +54,7 @@ const CTASection = () => {
                 <Icon name="ArrowRight" size={16} color="currentColor" />
               </button>
             </div>
-          ))}
+          )}
         </div>
 
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-2xl">
@@ -118,8 +118,8 @@ const CTASection = () => {
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+
                 </div>
 
                 <div>
@@ -127,8 +127,8 @@ const CTASection = () => {
                   <input
                     type="email"
                     placeholder="your.email@example.com"
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+
                 </div>
 
                 <div>
@@ -136,8 +136,8 @@ const CTASection = () => {
                   <input
                     type="tel"
                     placeholder="+91 98765 43210"
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+
                 </div>
 
                 <div>
@@ -167,8 +167,8 @@ const CTASection = () => {
                   fullWidth
                   iconName="Calendar"
                   iconPosition="left"
-                  className="bg-primary hover:bg-primary/90"
-                >
+                  className="bg-primary hover:bg-primary/90">
+
                   Schedule Consultation
                 </Button>
 
@@ -180,7 +180,7 @@ const CTASection = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center hidden">
           <p className="text-white/90 mb-4">Trusted by leading investors and international brands</p>
           <div className="flex flex-wrap justify-center gap-8 items-center opacity-70">
             <div className="text-white font-bold text-lg">Seoul Investment Group</div>
@@ -190,8 +190,8 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTASection;

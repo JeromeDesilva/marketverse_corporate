@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <Icon name="Award" size={20} color="#E8B931" />
-            <span className="text-sm font-medium text-white">100+ Man-Years of Marketing Excellence</span>
+            <span className="text-sm font-medium text-white">Experienced Marketing Team</span>
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg lg:text-xl text-white/90 mb-8 leading-relaxed">
-            We are Marketverse - India's premier marketing and brand-building powerhouse that combines corporate credibility with startup agility. Strategic boldness backed by proven expertise.
+            We are Marketverse - a specialized marketing and brand-building agency in India that combines corporate credibility with startup agility. Strategic boldness backed by proven expertise.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-white">

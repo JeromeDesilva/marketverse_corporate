@@ -28,7 +28,7 @@ const About = () => {
       <footer className="bg-[var(--color-foreground)] text-white py-8">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
           <p className="text-sm text-white/70">
-            &copy; {new Date()?.getFullYear()} Marketverse. All rights reserved. | Making growth inevitable through marketing excellence.
+            &copy; {new Date()?.getFullYear()} Marketverse. All rights reserved. | Helping brands achieve growth through marketing excellence.
           </p>
         </div>
       </footer>

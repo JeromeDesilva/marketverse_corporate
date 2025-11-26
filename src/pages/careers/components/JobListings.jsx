@@ -29,6 +29,17 @@ const JobListings = () => {
       alt: 'Senior marketing professional reviewing campaign analytics on dual monitors in modern office'
     },
     {
+      id: 11,
+      title: 'Administrative Specialist',
+      category: 'operations',
+      location: 'New York / Hybrid',
+      type: 'Full-time',
+      department: 'Operations',
+      description: 'Drive organizational excellence through office management, document coordination, and executive support functions.',
+      requirements: ['3+ years administrative experience', 'Proficiency in Microsoft Office Suite', 'Strong organizational and multitasking abilities'],
+      alt: 'Administrative specialist managing office operations in modern workspace'
+    },
+    {
       id: 2,
       title: 'Outreach & Sponsor Relations Manager',
       category: 'marketing',
@@ -220,7 +231,19 @@ const JobListings = () => {
                   <Button
                     variant="outline"
                     size="default"
-                    onClick={() => alert(`More details about ${job?.title}`)}
+                    onClick={() => {
+                      if (job?.id === 1) {
+                        window.location.href = '/marketing-strategist-job-details';
+                      } else if (job?.id === 2) {
+                        window.location.href = '/outreach-sponsor-relations-manager-job-details';
+                      } else if (job?.id === 3) {
+                        window.location.href = '/business-development-specialist-job-details';
+                      } else if (job?.id === 11) {
+                        window.location.href = '/admin-job-details';
+                      } else {
+                        alert(`More details about ${job?.title}`);
+                      }
+                    }}
                   >
                     Learn More
                   </Button>

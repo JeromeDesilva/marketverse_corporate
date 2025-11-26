@@ -11,7 +11,7 @@ const ServicesPreview = () => {
       id: 1,
       icon: "Target",
       title: "Brand Strategy & Positioning",
-      description: "Transform your brand identity into a market-dominating force with strategic positioning that resonates with your target audience.",
+      description: "Develop your brand identity and strategic positioning to help resonate with your target audience and stand out in competitive markets.",
       features: ["Market Analysis", "Brand Architecture", "Positioning Strategy"],
       color: "from-primary to-innovation"
     },
@@ -19,7 +19,7 @@ const ServicesPreview = () => {
       id: 2,
       icon: "Handshake",
       title: "Brand Promotion & Partnership",
-      description: "Build powerful strategic alliances and promotional campaigns that amplify brand reach through collaborative partnerships and co-marketing initiatives.",
+      description: "Build strategic alliances and promotional campaigns that amplify brand reach through collaborative partnerships and co-marketing initiatives.",
       features: ["Partnership Development", "Co-Marketing Campaigns", "Brand Collaboration"],
       color: "from-accent to-secondary"
     },
@@ -27,15 +27,15 @@ const ServicesPreview = () => {
       id: 3,
       icon: "Globe",
       title: "Market Entry Solutions",
-      description: "Navigate complex market landscapes with expert guidance for international brands entering Indian markets and vice versa.",
+      description: "Navigate complex market landscapes with guidance for brands entering new markets, leveraging local insights and strategic planning.",
       features: ["Market Research", "Entry Strategy", "Local Partnerships"],
       color: "from-trust to-success"
     },
     {
       id: 4,
       icon: "Package",
-      title: "Product Launch Excellence",
-      description: "End-to-end product launch strategies that create market buzz and drive immediate adoption through integrated campaigns.",
+      title: "Product Launch Services",
+      description: "Comprehensive product launch strategies designed to create market awareness and drive adoption through integrated marketing campaigns.",
       features: ["Launch Strategy", "PR & Media", "Influencer Marketing"],
       color: "from-partnership to-accent"
     },
@@ -43,7 +43,7 @@ const ServicesPreview = () => {
       id: 5,
       icon: "ShoppingCart",
       title: "E-commerce Growth",
-      description: "Scale your online presence with comprehensive e-commerce strategies covering marketplace optimization to direct-to-consumer excellence.",
+      description: "Develop your online presence with e-commerce strategies covering marketplace optimization and direct-to-consumer channels.",
       features: ["Marketplace Strategy", "Conversion Optimization", "Customer Retention"],
       color: "from-secondary to-warning"
     },
@@ -51,7 +51,7 @@ const ServicesPreview = () => {
       id: 6,
       icon: "TrendingUp",
       title: "Growth Consulting",
-      description: "Strategic business consulting that identifies growth opportunities and implements scalable systems for sustainable expansion.",
+      description: "Business consulting focused on identifying growth opportunities and implementing strategies for sustainable business expansion.",
       features: ["Growth Strategy", "Business Development", "Scalability Planning"],
       color: "from-innovation to-primary"
     }
@@ -66,10 +66,10 @@ const ServicesPreview = () => {
             <span className="text-primary text-sm font-semibold">Our Services</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Complete Marketing Solutions
+            Comprehensive Marketing Solutions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From strategy to execution, we provide end-to-end marketing services that transform ambitious brands into market leaders.
+            From strategy to execution, we provide end-to-end marketing services designed to help ambitious brands achieve their business goals.
           </p>
         </div>
 
