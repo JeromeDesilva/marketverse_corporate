@@ -19,10 +19,15 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build React app
+      - name: Build Vite app
         run: npm run build
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+
+      - name: Check output
+        run: ls -R .
 
       - name: Upload build folder
         uses: actions/upload-artifact@v4
