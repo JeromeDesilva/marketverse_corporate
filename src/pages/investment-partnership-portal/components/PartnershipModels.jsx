@@ -6,95 +6,83 @@ const PartnershipModels = () => {
   const [selectedModel, setSelectedModel] = useState('equity');
 
   const models = [
-    {
-      id: 'equity',
-      icon: 'Building2',
-      title: 'Equity Partnership',
-      subtitle: 'Strategic Investment Model',
-      investment: '₹1Cr - ₹10Cr',
-      equity: '15% - 35%',
-      duration: '5-7 Years',
-      returns: '400-600% ROI',
-      features: [
-        'Board representation and strategic input',
-        'Quarterly profit sharing from operations',
-        'Access to proprietary market intelligence',
-        'Priority exit options with guaranteed buyback',
-        'Co-branding opportunities for portfolio companies'
-      ],
-      idealFor: 'Institutional investors, Family offices, Strategic corporate investors',
-      // Brand-aligned solid color
-      solidColor: '#1A237E',
-      // Brand-aligned gradient (Navy to lighter Navy)
-      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #3949AB 100%)'
-    },
-    {
-      id: 'revenue',
-      icon: 'TrendingUp',
-      title: 'Revenue Share Partnership',
-      subtitle: 'Performance-Based Model',
-      investment: '₹25L - ₹2Cr',
-      equity: 'No Equity Dilution',
-      duration: '3-5 Years',
-      returns: '250-400% ROI',
-      features: [
-        'Fixed percentage of monthly revenue streams',
-        'No equity dilution or ownership transfer',
-        'Transparent revenue tracking dashboard',
-        'Flexible exit terms with 6-month notice',
-        'Participation in specific high-margin projects'
-      ],
-      idealFor: 'Angel investors, HNIs, Marketing professionals seeking passive income',
-      // Brand-aligned solid color (Yellow)
-      solidColor: '#F7D920',
-      // Brand-aligned gradient (Yellow to Gold)
-      gradientStyle: 'linear-gradient(135deg, #F7D920 0%, #F9A825 100%)'
-    },
-    {
-      id: 'project',
-      icon: 'Briefcase',
-      title: 'Project Co-Investment',
-      subtitle: 'Deal-by-Deal Model',
-      investment: '₹10L - ₹1Cr',
-      equity: 'Project-Specific Returns',
-      duration: '6-18 Months',
-      returns: '150-300% ROI',
-      features: [
-        'Investment in specific client projects or campaigns',
-        'Defined project scope with clear deliverables',
-        'Profit sharing from project success fees',
-        'Lower risk with shorter commitment periods',
-        'Option to reinvest in subsequent projects'
-      ],
-      idealFor: 'First-time investors, Risk-averse partners, Industry professionals',
-      // Brand-aligned solid color (Navy with blue tint)
-      solidColor: '#283593',
-      // Brand-aligned gradient (Navy to Blue)
-      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #1976D2 100%)'
-    },
-    {
-      id: 'market',
-      icon: 'Globe',
-      title: 'Market Entry Partnership',
-      subtitle: 'International Expansion Model',
-      investment: '₹50L - ₹5Cr',
-      equity: 'Hybrid Structure',
-      duration: '3-5 Years',
-      returns: '300-500% ROI',
-      features: [
-        'Joint venture for international brand launches',
-        'Shared investment in market research and setup',
-        'Revenue sharing from successful brand entries',
-        'Access to Marketverse distribution network',
-        'Co-ownership of market entry IP and processes'
-      ],
-      idealFor: 'International brands, Import/export businesses, Global investors',
-      // Brand-aligned solid color (Navy with purple tint)
-      solidColor: '#311B92',
-      // Brand-aligned gradient (Navy to Purple with Yellow accent)
-      gradientStyle: 'linear-gradient(135deg, #1A237E 0%, #4527A0 70%, #F7D920 100%)'
-    }
-  ];
+  {
+    id: 'equity',
+    icon: 'Building2',
+    title: 'Equity Partnership',
+    subtitle: 'Strategic Investment Model',
+    investment: '₹1Cr - ₹10Cr',
+    equity: '15% - 35%',
+    duration: '5-7 Years',
+    returns: '400-600% ROI',
+    features: [
+    'Board representation and strategic input',
+    'Quarterly profit sharing from operations',
+    'Access to proprietary market intelligence',
+    'Priority exit options with guaranteed buyback',
+    'Co-branding opportunities for portfolio companies'],
+
+    idealFor: 'Institutional investors, Family offices, Strategic corporate investors',
+    color: 'primary'
+  },
+  {
+    id: 'revenue',
+    icon: 'TrendingUp',
+    title: 'Revenue Share Partnership',
+    subtitle: 'Performance-Based Model',
+    investment: '₹25L - ₹2Cr',
+    equity: 'No Equity Dilution',
+    duration: '3-5 Years',
+    returns: '250-400% ROI',
+    features: [
+    'Fixed percentage of monthly revenue streams',
+    'No equity dilution or ownership transfer',
+    'Transparent revenue tracking dashboard',
+    'Flexible exit terms with 6-month notice',
+    'Participation in specific high-margin projects'],
+
+    idealFor: 'Angel investors, HNIs, Marketing professionals seeking passive income',
+    color: 'success'
+  },
+  {
+    id: 'project',
+    icon: 'Briefcase',
+    title: 'Project Co-Investment',
+    subtitle: 'Deal-by-Deal Model',
+    investment: '₹10L - ₹1Cr',
+    equity: 'Project-Specific Returns',
+    duration: '6-18 Months',
+    returns: '150-300% ROI',
+    features: [
+    'Investment in specific client projects or campaigns',
+    'Defined project scope with clear deliverables',
+    'Profit sharing from project success fees',
+    'Lower risk with shorter commitment periods',
+    'Option to reinvest in subsequent projects'],
+
+    idealFor: 'First-time investors, Risk-averse partners, Industry professionals',
+    color: 'innovation'
+  },
+  {
+    id: 'market',
+    icon: 'Globe',
+    title: 'Market Entry Partnership',
+    subtitle: 'International Expansion Model',
+    investment: '₹50L - ₹5Cr',
+    equity: 'Hybrid Structure',
+    duration: '3-5 Years',
+    returns: '300-500% ROI',
+    features: [
+    'Joint venture for international brand launches',
+    'Shared investment in market research and setup',
+    'Revenue sharing from successful brand entries',
+    'Access to Marketverse distribution network',
+    'Co-ownership of market entry IP and processes'],
+
+    idealFor: 'International brands, Import/export businesses, Global investors',
+    color: 'accent'
+  }];
+
 
   const currentModel = models?.find((m) => m?.id === selectedModel);
 
@@ -140,15 +128,9 @@ const PartnershipModels = () => {
           )}
         </div>
 
-        {currentModel && (
+        {currentModel &&
         <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden border-solid">
-            <div 
-              className="p-8 text-white"
-              style={{ 
-                background: currentModel?.gradientStyle,
-                boxShadow: '0 4px 20px rgba(26, 35, 126, 0.15)'
-              }}
-            >
+            <div className={`bg-gradient-to-r from-${currentModel?.color} to-${currentModel?.color}/80 p-8 text-white`}>
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{currentModel?.title}</h3>
@@ -176,17 +158,6 @@ const PartnershipModels = () => {
                   <div className="text-sm text-white/80 mb-1">Expected Returns</div>
                   <div className="text-xl font-bold">{currentModel?.returns}</div>
                 </div>
-              </div>
-
-              {/* Brand color accent bar */}
-              <div className="mt-6 h-1 w-full rounded-full bg-white/20">
-                <div 
-                  className="h-full rounded-full transition-all duration-500"
-                  style={{ 
-                    width: '75%',
-                    background: currentModel?.id === 'revenue' ? '#1A237E' : '#F7D920'
-                  }}
-                />
               </div>
             </div>
 
@@ -240,7 +211,7 @@ const PartnershipModels = () => {
               </div>
             </div>
           </div>
-        )}
+        }
       </div>
     </section>);
 

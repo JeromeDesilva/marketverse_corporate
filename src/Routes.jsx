@@ -10,6 +10,7 @@ import KoreanSuperStoreCaseStudy from './pages/korean-super-store-case-study';
 import About from './pages/about';
 import CaseStudies from './pages/case-studies';
 import Homepage from './pages/homepage';
+import Careers from './pages/careers';
 
 const Routes = () => {
   return (
@@ -26,6 +27,7 @@ const Routes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
