@@ -180,7 +180,7 @@ const CTASection = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center hidden">
+      {/* <div className="mt-12 text-center hidden">
           <p className="text-white/90 mb-4">Trusted by leading investors and international brands</p>
           <div className="flex flex-wrap justify-center gap-8 items-center opacity-70">
             <div className="text-white font-bold text-lg">Seoul Investment Group</div>
@@ -188,7 +188,7 @@ const CTASection = () => {
             <div className="text-white font-bold text-lg">Health Ventures India</div>
             <div className="text-white font-bold text-lg">Global Trade Partners</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>);
 
