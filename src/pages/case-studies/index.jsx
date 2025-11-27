@@ -28,7 +28,7 @@ const CaseStudies = () => {
     image: "https://images.unsplash.com/photo-1652705334308-78bc1c9ab361",
     imageAlt: "Modern Korean retail store interior with bright lighting, organized product displays, and contemporary design featuring traditional Korean aesthetic elements",
     industry: "Retail",
-    services: ["Brand Building", "Market Entry", "Digital Marketing", "Content Strategy"],
+    services: ["Brand Building", "Market Entry", "Market Research & Analytics", "Content Strategy"],
     metrics: [
     { label: "Revenue Growth", value: "300%" },
     { label: "Market Share", value: "15%" },
@@ -62,7 +62,7 @@ const CaseStudies = () => {
     image: "https://images.unsplash.com/photo-1659353741121-15d88d99c64e",
     imageAlt: "Professional food delivery service showing delivery person in branded uniform holding insulated food bag, with modern restaurant kitchen in background",
     industry: "Delivery",
-    services: ["Market Entry", "Digital Marketing", "Social Media", "Content Strategy"],
+    services: ["Market Entry", "Market Research & Analytics", "Social Media", "Content Strategy"],
     metrics: [
     { label: "Cities Entered", value: "15" },
     { label: "Order Growth", value: "180%" },
@@ -79,7 +79,7 @@ const CaseStudies = () => {
     image: "https://images.unsplash.com/photo-1713998740833-f76168c04676",
     imageAlt: "Modern online learning environment showing diverse students using laptops and tablets for education, with interactive digital displays and collaborative study spaces",
     industry: "Education",
-    services: ["Digital Marketing", "Content Strategy", "SEO & Analytics", "Social Media"],
+    services: ["Market Research & Analytics", "Content Strategy", "SEO & Analytics", "Social Media"],
     metrics: [
     { label: "Enrollments", value: "350%" },
     { label: "CAC Reduction", value: "40%" },
@@ -139,8 +139,8 @@ const CaseStudies = () => {
     description: "Complete brand identity creation and positioning strategies that establish market presence"
   },
   {
-    name: "Digital Marketing",
-    description: "Comprehensive digital campaigns across all channels for maximum reach and engagement"
+    name: "Market Research & Analytics",
+    description: "Comprehensive data-driven insights and competitive analysis for strategic decision-making"
   },
   {
     name: "Market Entry",

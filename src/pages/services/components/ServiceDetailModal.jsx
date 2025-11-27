@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
 
 const ServiceDetailModal = ({ service, onClose }) => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('overview');
   const [formData, setFormData] = useState({
     name: '',
@@ -20,6 +22,13 @@ const ServiceDetailModal = ({ service, onClose }) => {
   const handleSubmit = (e) => {
     e?.preventDefault();
     alert('Thank you for your interest! Our team will contact you within 24 hours.');
+    onClose();
+  };
+
+  const handleSelectPlan = (tier) => {
+    navigate('/payment-gateway', {
+      state: { service, tier }
+    });
     onClose();
   };
 
@@ -179,7 +188,11 @@ const ServiceDetailModal = ({ service, onClose }) => {
                         </li>
                       ))}
                     </ul>
-                    <Button variant={tier?.recommended ? 'default' : 'outline'} fullWidth>
+                    <Button 
+                      variant={tier?.recommended ? 'default' : 'outline'} 
+                      fullWidth
+                      onClick={() => handleSelectPlan(tier)}
+                    >
                       Select Plan
                     </Button>
                   </div>

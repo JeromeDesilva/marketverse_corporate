@@ -4,22 +4,22 @@ import { FileText, Calendar, Users, Settings } from 'lucide-react';
 const RoleOverview = () => {
   const highlights = [
     {
-      icon: <FileText className="w-6 h-6" />,
+      Icon: FileText,
       title: 'Document Management',
       description: 'Oversee document organization, filing systems, and administrative workflows'
     },
     {
-      icon: <Calendar className="w-6 h-6" />,
+      Icon: Calendar,
       title: 'Office Coordination',
       description: 'Manage office operations, supplies, facilities, and vendor relationships'
     },
     {
-      icon: <Users className="w-6 h-6" />,
+      Icon: Users,
       title: 'Executive Support',
       description: 'Provide high-level administrative support to leadership and project teams'
     },
     {
-      icon: <Settings className="w-6 h-6" />,
+      Icon: Settings,
       title: 'Process Optimization',
       description: 'Implement efficient administrative systems and standard operating procedures'
     }
@@ -49,18 +49,21 @@ const RoleOverview = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {highlights?.map((item, index) => (
-              <div
-                key={index}
-                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/50"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
-                  {item?.icon}
+            {highlights?.map((item, index) => {
+              const IconComponent = item?.Icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/50"
+                >
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
+                    <IconComponent className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">{item?.title}</h3>
+                  <p className="text-muted-foreground">{item?.description}</p>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">{item?.title}</h3>
-                <p className="text-muted-foreground">{item?.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

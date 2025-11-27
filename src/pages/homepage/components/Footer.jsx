@@ -58,6 +58,11 @@ const Footer = () => {
         ]
       },
       { 
+        label: "Blog", 
+        path: "/blog-hub",
+        children: []
+      },
+      { 
         label: "Investment Portal", 
         path: "/investment-partnership-portal",
         children: []

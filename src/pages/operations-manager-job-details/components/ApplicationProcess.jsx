@@ -1,0 +1,168 @@
+import React from 'react';
+import { FileText, Video, Users, CheckCircle } from 'lucide-react';
+import Button from '../../../components/ui/Button';
+
+const ApplicationProcess = () => {
+  const steps = [
+    {
+      icon: <FileText className="w-6 h-6" />,
+      title: 'Submit Application',
+      description: 'Complete online application with resume and operations management portfolio',
+      duration: '15-20 minutes',
+      requirements: [
+        'Updated resume highlighting operations leadership',
+        'Cover letter explaining operational philosophy',
+        'Examples of process improvement initiatives',
+        'References from previous operational roles'
+      ]
+    },
+    {
+      icon: <Video className="w-6 h-6" />,
+      title: 'Initial Screening',
+      description: 'Video call with HR and operations leadership to discuss experience',
+      duration: '45 minutes',
+      requirements: [
+        'Review of operations management background',
+        'Discussion of process optimization successes',
+        'Assessment of leadership style',
+        'Salary and role expectations alignment'
+      ]
+    },
+    {
+      icon: <FileText className="w-6 h-6" />,
+      title: 'Case Study Assessment',
+      description: 'Complete operations-focused case study and strategic planning exercise',
+      duration: '3-4 hours',
+      requirements: [
+        'Analyze operational scenario and propose solutions',
+        'Develop process improvement strategy',
+        'Create KPI framework and measurement plan',
+        'Present resource allocation recommendations'
+      ]
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: 'Leadership Panel Interview',
+      description: 'Meet with senior leadership and department heads',
+      duration: '2-3 hours',
+      requirements: [
+        'Present case study findings and recommendations',
+        'Discuss operational strategy and vision',
+        'Cross-functional collaboration assessment',
+        'Leadership and team building evaluation'
+      ]
+    },
+    {
+      icon: <CheckCircle className="w-6 h-6" />,
+      title: 'Final Round & Offer',
+      description: 'Executive discussion and comprehensive offer presentation',
+      duration: '1 hour',
+      requirements: [
+        'Strategic alignment with company vision',
+        'Compensation and benefits negotiation',
+        'Role scope and expectations clarification',
+        'Offer letter and onboarding details'
+      ]
+    }
+  ];
+
+  return (
+    <section id="application-process" className="py-16 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Application Process
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Our comprehensive hiring process ensures we find candidates with exceptional operations leadership capabilities
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+            
+            <div className="space-y-8">
+              {steps?.map((step, index) => (
+                <div
+                  key={index}
+                  className="relative bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 ml-0 md:ml-20"
+                >
+                  <div className="absolute -left-12 top-8 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg hidden md:flex">
+                    {index + 1}
+                  </div>
+                  
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+                      {step?.icon}
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-2xl font-bold text-foreground">
+                          {step?.title}
+                        </h3>
+                        <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
+                          {step?.duration}
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground">
+                        {step?.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="ml-16">
+                    <h4 className="font-semibold text-foreground mb-3">What to Expect:</h4>
+                    <ul className="space-y-2">
+                      {step?.requirements?.map((req, reqIndex) => (
+                        <li key={reqIndex} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">{req}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 bg-primary/5 border border-primary/20 rounded-xl p-8">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Ready to Lead Operations Excellence?
+              </h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                The entire process typically takes 3-4 weeks. We'll provide detailed feedback and maintain transparent communication throughout.
+              </p>
+              <Button
+                variant="default"
+                size="lg"
+                onClick={() => window.location.href = '/contact'}
+              >
+                Apply Now
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <div className="bg-card border border-border rounded-xl p-6 text-center">
+              <div className="text-3xl font-bold text-primary mb-2">3-4 Weeks</div>
+              <p className="text-sm text-muted-foreground">Average Process Duration</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6 text-center">
+              <div className="text-3xl font-bold text-primary mb-2">5 Stages</div>
+              <p className="text-sm text-muted-foreground">Comprehensive Evaluation</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6 text-center">
+              <div className="text-3xl font-bold text-primary mb-2">100%</div>
+              <p className="text-sm text-muted-foreground">Transparent Process</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ApplicationProcess;

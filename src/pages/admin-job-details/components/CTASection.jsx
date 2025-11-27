@@ -1,5 +1,4 @@
 import React from 'react';
-import { Send, MessageCircle } from 'lucide-react';
 import Button from '../../../components/ui/Button';
 
 const CTASection = () => {

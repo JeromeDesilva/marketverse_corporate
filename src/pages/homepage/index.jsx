@@ -7,6 +7,7 @@ import FeaturedCaseStudy from './components/FeaturedCaseStudy';
 import WhyChooseUs from './components/WhyChooseUs';
 import TestimonialsSection from './components/TestimonialsSection';
 import CTASection from './components/CTASection';
+import BlogPreview from './components/BlogPreview';
 import Footer from './components/Footer';
 
 const Homepage = () => {
@@ -25,6 +26,7 @@ const Homepage = () => {
         <WhyChooseUs />
         <TestimonialsSection />
         <CTASection />
+        <BlogPreview />
       </main>
       <Footer />
     </div>

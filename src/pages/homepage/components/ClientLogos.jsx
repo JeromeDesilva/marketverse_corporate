@@ -1,7 +1,7 @@
-//import React from 'react';
-//import Image from '../../../components/AppImage';
+import React from 'react';
+import Image from '../../../components/AppImage';
 
-{/*const ClientLogos = () => {
+const ClientLogos = () => {
   const clients = [
   {
     name: "Korean Super Store",
@@ -98,6 +98,6 @@
       `}</style>
     </section>);
 
-};*/}
+};
 
-//export default ClientLogos;
+export default ClientLogos;

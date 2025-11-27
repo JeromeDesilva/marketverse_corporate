@@ -238,8 +238,14 @@ const JobListings = () => {
                         window.location.href = '/outreach-sponsor-relations-manager-job-details';
                       } else if (job?.id === 3) {
                         window.location.href = '/business-development-specialist-job-details';
+                      } else if (job?.id === 4) {
+                        window.location.href = '/public-relations-specialist-job-details';
+                      } else if (job?.id === 6) {
+                        alert('Event Management Coordinator details coming soon!');
+                      } else if (job?.id === 7) {
+                        window.location.href = '/operations-manager-job-details';
                       } else if (job?.id === 11) {
-                        window.location.href = '/admin-job-details';
+                        window.location.href = '/administrative-specialist-job-details';
                       } else {
                         alert(`More details about ${job?.title}`);
                       }
