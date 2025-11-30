@@ -46,7 +46,8 @@ const ClientLogos = () => {
 
 
   return (
-    <section className="py-16 bg-muted/30 hidden">
+   // <section className="py-16 bg-muted/30 hidden">
+   <section className="py-16 bg-muted/30" style={{ display: "none" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
@@ -100,4 +101,6 @@ const ClientLogos = () => {
 
 };
 
+
 export default ClientLogos;
+
