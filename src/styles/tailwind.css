@@ -58,6 +58,10 @@
     --font-body: 'Source Sans Pro', sans-serif;
     --font-cta: 'Inter', sans-serif;
     --font-accent: 'JetBrains Mono', monospace;
+
+     /* Gradient Helper Colors */
+    --color-trust-light: #8CF3A8;
+    --color-success-dark: #2E7D32;
     
     /* Spacing - Golden Ratio Scale */
     --spacing-xs: 0.5rem; /* 8px */

@@ -7,21 +7,21 @@ const CTASection = () => {
     {
       icon: 'Phone',
       title: 'Call Us',
-      value: '+91 98765 43210',
+      value: '+91 86628 41456',
       description: 'Mon-Sat, 9:00 AM - 7:00 PM IST',
       action: 'Call Now'
     },
     {
       icon: 'Mail',
       title: 'Email Us',
-      value: 'invest@marketverse.in',
+      value: 'invest@marketverse.co.in',
       description: 'Response within 24 hours',
       action: 'Send Email'
     },
     {
       icon: 'MapPin',
       title: 'Visit Office',
-      value: 'Mumbai, Maharashtra',
+      value: 'Chennai, India',
       description: 'By appointment only',
       action: 'Get Directions'
     }

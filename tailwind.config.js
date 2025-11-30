@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+
+         //Added gradient helper colors
+        trustlight: "var(--color-trust-light)",
+        successdark: "var(--color-success-dark)",
+
         border: 'var(--color-border)', // gray-200
         input: 'var(--color-input)', // gray-200
         ring: 'var(--color-ring)', // blue-900

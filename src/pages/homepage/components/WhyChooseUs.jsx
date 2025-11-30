@@ -2,48 +2,59 @@ import React from 'react';
 import Icon from '../../../components/AppIcon';
 
 const WhyChooseUs = () => {
+  // map keys -> full Tailwind classes
+  const gradientMap = {
+    'excellence': 'bg-gradient-to-br from-primary to-innovation',
+    'results': 'bg-gradient-to-br from-secondary to-warning',
+    'market-intel': 'bg-gradient-to-br from-trustlight to-successdark',
+    'solutions': 'bg-gradient-to-br from-partnership to-accent',
+    'partnership': 'bg-gradient-to-br from-secondary to-warning',
+    'track-record': 'bg-gradient-to-br from-innovation to-primary',
+  };
+
   const reasons = [
     {
       icon: "Award",
       title: "Data-Driven Excellence",
       description: "Advanced analytics and market intelligence combined with creative expertise to deliver campaigns that consistently outperform industry benchmarks.",
-      color: "from-primary to-innovation"
+      color: "excellence"
     },
     {
       icon: "Target",
       title: "Measurable Results",
       description: "Every campaign is tracked, analyzed, and optimized for maximum ROI. We don't just promise growth—we guarantee measurable outcomes.",
-      color: "from-accent to-secondary"
+      color: "results"
     },
     {
       icon: "Globe",
       title: "Cultural Market Intelligence",
       description: "Deep understanding of Indian market dynamics combined with global best practices for authentic local resonance.",
-      color: "from-trust to-success"
+      color: "market-intel"
     },
     {
       icon: "Zap",
       title: "End-to-End Solutions",
       description: "From strategy to execution, we handle every aspect of your marketing journey with integrated, comprehensive services.",
-      color: "from-partnership to-accent"
+      color: "solutions"
     },
     {
       icon: "Users",
       title: "Dedicated Partnership",
-      description: "You\'re not just a client—you\'re a partner. We invest in your success with dedicated teams and personalized strategies.",
-      color: "from-secondary to-warning"
+      description: "You're not just a client—you’re a partner. We invest in your success with dedicated teams and personalized strategies.",
+      color: "partnership"
     },
     {
       icon: "TrendingUp",
       title: "Proven Track Record",
       description: "50+ brands transformed, 300% average growth rate, and 98% client satisfaction. Our results speak for themselves.",
-      color: "from-innovation to-primary"
+      color: "track-record"
     }
   ];
 
   return (
     <section className="py-20 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-success/10 rounded-full mb-6">
             <Icon name="Star" size={20} color="var(--color-success)" />
@@ -57,27 +68,29 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
+        {/* Reasons Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reasons?.map((reason, index) => (
+          {reasons.map((reason, index) => (
             <div
               key={index}
               className="group bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all card-hover"
             >
-              <div className={`w-16 h-16 bg-gradient-to-br ${reason?.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                <Icon name={reason?.icon} size={32} color="#FFFFFF" />
+              <div className={`w-16 h-16 ${gradientMap[reason.color] || 'bg-muted'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                <Icon name={reason.icon} size={32} color="#FFFFFF" />
               </div>
 
               <h3 className="text-xl font-bold text-foreground mb-3">
-                {reason?.title}
+                {reason.title}
               </h3>
 
               <p className="text-muted-foreground leading-relaxed">
-                {reason?.description}
+                {reason.description}
               </p>
             </div>
           ))}
         </div>
 
+        {/* Stats Section */}
         <div className="mt-16 bg-gradient-to-r from-primary/5 to-innovation/5 rounded-3xl p-8 lg:p-12">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>

@@ -13,7 +13,7 @@ const CTASection = () => {
       description: "Get expert marketing advice tailored to your business goals",
       action: () => navigate('/contact'),
       buttonText: "Schedule Call",
-      color: "from-accent to-secondary"
+      color: "from-secondary to-warning"
     },
     {
       icon: "Briefcase",
@@ -29,7 +29,7 @@ const CTASection = () => {
       description: "See how we\'ve transformed brands into market leaders",
       action: () => navigate('/case-studies'),
       buttonText: "Read Stories",
-      color: "from-trust to-success"
+      color: "bg-gradient-to-br from-trustlight to-successdark"
     }
   ];
 

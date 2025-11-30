@@ -58,7 +58,7 @@ const CTASection = () => {
               <Icon name="Mail" size={32} color="#E8B931" className="mb-3" />
               <div className="text-white/70 text-sm mb-1">Email Us</div>
               <a href="mailto:hello@marketverse.in" className="text-white font-semibold hover:text-[var(--color-secondary)] transition-colors">
-                hello@marketverse.in
+                hello@marketverse.co.in
               </a>
             </div>
 
@@ -66,14 +66,14 @@ const CTASection = () => {
               <Icon name="Phone" size={32} color="#E8B931" className="mb-3" />
               <div className="text-white/70 text-sm mb-1">Call Us</div>
               <a href="tel:+919876543210" className="text-white font-semibold hover:text-[var(--color-secondary)] transition-colors">
-                +91 98765 43210
+                +91 86628 41456
               </a>
             </div>
 
             <div className="flex flex-col items-center">
               <Icon name="MapPin" size={32} color="#E8B931" className="mb-3" />
               <div className="text-white/70 text-sm mb-1">Visit Us</div>
-              <div className="text-white font-semibold">Mumbai, India</div>
+              <div className="text-white font-semibold">Chennai, India</div>
             </div>
           </div>
         </div>
