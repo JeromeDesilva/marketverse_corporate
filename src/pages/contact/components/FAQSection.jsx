@@ -27,7 +27,7 @@ const FAQSection = () => {
     },
     {
       question: 'Can I visit your office for an in-person meeting?',
-      answer: 'Absolutely! We welcome office visits at both our Mumbai and Delhi locations. Please schedule an appointment through our booking system or contact us directly. We also offer virtual consultations for clients who prefer remote meetings or are located outside these cities.'
+      answer: 'Absolutely! We welcome office visits at both our Chennai locations. Please schedule an appointment through our booking system or contact us directly. We also offer virtual consultations for clients who prefer remote meetings or are located outside these cities.'
     },
     {
       question: 'What makes Marketverse different from other marketing agencies?',

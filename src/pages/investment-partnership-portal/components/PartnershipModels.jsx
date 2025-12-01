@@ -130,7 +130,7 @@ const PartnershipModels = () => {
 
         {currentModel &&
         <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden border-solid">
-            <div className={`bg-gradient-to-r from-${currentModel?.color} to-${currentModel?.color}/80 p-8 text-white`}>
+           <div className={`bg-${currentModel?.color} p-8 text-white`}>
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{currentModel?.title}</h3>

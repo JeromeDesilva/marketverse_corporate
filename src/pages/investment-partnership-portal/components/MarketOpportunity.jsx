@@ -61,7 +61,7 @@ const MarketOpportunity = () => {
     potential: 'High'
   },
   {
-    name: 'Technology & SaaS',
+    name: 'Technology & AI',
     growth: '35%',
     investment: '₹1Cr - ₹10Cr',
     image: "https://images.unsplash.com/photo-1662638600507-0846616ec508",
