@@ -30,8 +30,8 @@ const NewsletterSection = () => {
           and actionable strategies directly to your inbox.
         </p>
 
-        {subscribed ? (
-          <div className="bg-success/10 border border-success/30 rounded-lg p-6 max-w-md mx-auto">
+        {subscribed ?
+        <div className="bg-success/10 border border-success/30 rounded-lg p-6 max-w-md mx-auto">
             <div className="flex items-center justify-center gap-2 text-success mb-2">
               <Icon name="CheckCircle" size={24} />
               <span className="font-semibold">Successfully Subscribed!</span>
@@ -39,22 +39,22 @@ const NewsletterSection = () => {
             <p className="text-sm text-muted-foreground">
               Check your inbox for a confirmation email.
             </p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+          </div> :
+
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             <div className="flex flex-col sm:flex-row gap-3">
               <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e?.target?.value)}
-                placeholder="Enter your email address"
-                required
-                className="flex-1 px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-              />
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e?.target?.value)}
+              placeholder="Enter your email address"
+              required
+              className="flex-1 px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+
               <button
-                type="submit"
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
-              >
+              type="submit"
+              className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
+
                 Subscribe
                 <Icon name="Send" size={18} />
               </button>
@@ -63,9 +63,9 @@ const NewsletterSection = () => {
               By subscribing, you agree to receive marketing emails. Unsubscribe anytime.
             </p>
           </form>
-        )}
+        }
 
-        <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border">
+        <div className="grid-cols-3 gap-8 mt-12 pt-12 border-t border-border hidden">
           <div>
             <div className="text-3xl font-bold text-primary mb-1">5K+</div>
             <div className="text-sm text-muted-foreground">Subscribers</div>
@@ -80,8 +80,8 @@ const NewsletterSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default NewsletterSection;
