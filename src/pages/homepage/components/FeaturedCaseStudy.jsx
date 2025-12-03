@@ -16,7 +16,7 @@ const FeaturedCaseStudy = () => {
     metrics: [
     { value: "300%", label: "Revenue Growth", icon: "TrendingUp" },
     { value: "50K+", label: "Monthly Customers", icon: "Users" },
-    { value: "15", label: "Store Locations", icon: "MapPin" },
+    { value: "1", label: "Store Locations", icon: "MapPin" },
     { value: "98%", label: "Customer Satisfaction", icon: "Heart" }],
 
     highlights: [
@@ -34,8 +34,8 @@ const FeaturedCaseStudy = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6">
-            <Icon name="Award" size={20} color="var(--color-accent)" />
-            <span className="text-accent text-sm font-semibold">Featured Success Story</span>
+            <Icon name="Award" size={20} color="green" fill="none" />
+            <span className="text-green-500 text-sm font-semibold">Featured Success Story</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Transforming Ambition Into Market Dominance

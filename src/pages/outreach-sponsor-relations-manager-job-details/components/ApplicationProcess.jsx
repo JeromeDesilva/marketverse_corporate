@@ -138,7 +138,7 @@ const ApplicationProcess = () => {
                   label="Phone Number"
                   name="phone"
                   type="tel"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+91 22222 33333"
                   value={formData?.phone}
                   onChange={handleInputChange}
                   required
@@ -176,7 +176,7 @@ const ApplicationProcess = () => {
                   label="Expected Salary"
                   name="expectedSalary"
                   type="text"
-                  placeholder="$70,000"
+                  placeholder="₹70,000"
                   value={formData?.expectedSalary}
                   onChange={handleInputChange}
                 />

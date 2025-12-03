@@ -1,10 +1,10 @@
 import React from 'react';
-import { DollarSign, TrendingUp, Heart, Lightbulb, Plane, Home } from 'lucide-react';
+import { IndianRupeeSign, TrendingUp, Heart, Lightbulb, Plane, Home } from 'lucide-react';
 
 const CompensationBenefits = () => {
   const compensation = {
     salary: {
-      base: '$65,000 - $85,000',
+      base: '₹65,000 - ₹85,000',
       details: 'Competitive base salary based on experience and qualifications'
     },
     bonus: {
@@ -19,7 +19,7 @@ const CompensationBenefits = () => {
 
   const benefits = [
     {
-      icon: DollarSign,
+      icon: IndianRupeeSign,
       title: 'Competitive Compensation',
       description: '₹5,00,000 - ₹9,00,000 annually based on experience',
       details: [
@@ -46,7 +46,7 @@ const CompensationBenefits = () => {
       icon: Lightbulb,
       category: 'Professional Development',
       items: [
-        'Annual learning and development budget ($2,000)',
+        'Annual learning and development budget (₹2,000)',
         'Industry conference attendance opportunities',
         'Professional certification support',
         'Mentorship program with senior leadership'
@@ -68,7 +68,7 @@ const CompensationBenefits = () => {
       icon: Home,
       category: 'Unique Perks',
       items: [
-        'Home office setup stipend ($1,500)',
+        'Home office setup stipend (₹1,500)',
         'Company-sponsored team events and retreats',
         'Exclusive access to industry networking events',
         'Employee referral bonus program'

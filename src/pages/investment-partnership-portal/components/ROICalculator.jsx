@@ -157,7 +157,7 @@ const ROICalculator = () => {
 
           {results && (
             <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden">
-              <div className="bg-gradient-to-r from-success to-success/80 p-8 text-white">
+                        <div className="bg-success p-8 text-white">
                 <h3 className="text-2xl font-bold mb-2">Projected Returns</h3>
                 <p className="text-white/90">Based on your investment parameters</p>
               </div>

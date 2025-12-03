@@ -33,6 +33,10 @@
     --color-border: #E8E8E8; /* Light gray border */
     --color-input: #F5F5F5; /* Very light gray input background */
     --color-ring: #1A237E; /* Navy blue ring */
+
+    /* Gradient Helper Colors */
+    --color-trust-light: #8CF3A8;
+    --color-success-dark: #2E7D32;
     
     /* Status Colors */
     --color-success: #4CAF50; /* green - Success indicator */

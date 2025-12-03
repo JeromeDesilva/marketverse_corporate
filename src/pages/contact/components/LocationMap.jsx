@@ -4,19 +4,19 @@ import Icon from '../../../components/AppIcon';
 const LocationMap = () => {
   const offices = [
     {
-      city: 'Mumbai',
-      address: 'Marketverse HQ, 3rd Floor, Andheri East, Mumbai 400069, Maharashtra',
-      phone: '+91 98765 43210',
-      email: 'mumbai@marketverse.in',
+      city: 'Chennai',
+      address: 'Marketverse HQ, Ambattur Industrial Estate, Chennai 600053, Tamil Nadu',
+      phone: '+91 86628 41456',
+      email: 'chennai@marketverse.co.in',
       isPrimary: true,
       lat: 19.1136,
       lng: 72.8697
     },
     {
       city: 'Delhi',
-      address: 'Marketverse North, Connaught Place, New Delhi 110001, Delhi',
+      address: 'Marketverse North, Coming Soon, Delhi & Mumbai, India',
       phone: '+91 98765 43211',
-      email: 'delhi@marketverse.in',
+      email: 'delhi@marketverse.co.in',
       isPrimary: false,
       lat: 28.6304,
       lng: 77.2177

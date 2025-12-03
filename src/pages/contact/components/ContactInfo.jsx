@@ -6,22 +6,22 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      primary: 'hello@marketverse.in',
-      secondary: 'support@marketverse.in',
+      primary: 'hello@marketverse.co.in',
+      secondary: 'support@marketverse.co.in',
       description: 'For general inquiries and support'
     },
     {
       icon: 'Phone',
       title: 'Call Us',
-      primary: '+91 98765 43210',
-      secondary: '+91 98765 43211',
+      primary: '+91 86628 41456',
+      secondary: '+91 86628 41456',
       description: 'Mon-Sat, 10:00 AM - 7:00 PM IST'
     },
     {
       icon: 'MapPin',
       title: 'Visit Us',
-      primary: 'Mumbai Office',
-      secondary: 'Andheri East, Mumbai 400069',
+      primary: 'Chennai Office',
+      secondary: 'Ambattur, Chennai - 600053',
       description: 'By appointment only'
     }
   ];

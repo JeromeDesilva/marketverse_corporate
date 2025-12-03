@@ -8,7 +8,7 @@ const CareerProgression = () => {
       title: 'Outreach & Sponsor Relations Manager',
       timeline: 'Years 0-2',
       focus: 'Build foundational sponsor relationships and develop outreach expertise',
-      metrics: ['10+ active sponsor partnerships', '85%+ sponsor satisfaction', '$500K+ annual partnership revenue'],
+      metrics: ['10+ active sponsor partnerships', '85%+ sponsor satisfaction', '₹500K+ annual partnership revenue'],
       icon: Target,
       alt: 'Target icon representing current position goals and objectives'
     },
@@ -17,7 +17,7 @@ const CareerProgression = () => {
       title: 'Senior Sponsor Relations Manager',
       timeline: 'Years 2-4',
       focus: 'Lead major partnerships, mentor junior team members, and drive strategic initiatives',
-      metrics: ['20+ enterprise-level partnerships', 'Team leadership responsibilities', '$1M+ partnership portfolio'],
+      metrics: ['20+ enterprise-level partnerships', 'Team leadership responsibilities', '₹1M+ partnership portfolio'],
       icon: TrendingUp,
       alt: 'Trending up graph icon representing career advancement'
     },

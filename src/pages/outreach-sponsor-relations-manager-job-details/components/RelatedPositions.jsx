@@ -7,7 +7,7 @@ const RelatedPositions = () => {
     {
       title: 'Public Relations Specialist',
       department: 'Marketing',
-      location: 'New York / Remote',
+      location: 'Chennai / Remote',
       type: 'Full-time',
       description: 'Manage company reputation and media relations while developing PR strategies',
       alt: 'Public relations professional managing media communications and press releases'
@@ -15,7 +15,7 @@ const RelatedPositions = () => {
     {
       title: 'Senior Marketing Strategist',
       department: 'Strategy',
-      location: 'Remote / New York',
+      location: 'Remote / Chennai',
       type: 'Full-time',
       description: 'Lead multi-channel marketing strategies for enterprise clients',
       alt: 'Marketing strategist analyzing campaign performance on digital dashboard'
@@ -23,7 +23,7 @@ const RelatedPositions = () => {
     {
       title: 'Business Development Manager',
       department: 'Business Development',
-      location: 'Chicago',
+      location: 'Chennai / Remote',
       type: 'Full-time',
       description: 'Drive new business acquisition and build long-term client relationships',
       alt: 'Business development manager presenting growth opportunities to clients'

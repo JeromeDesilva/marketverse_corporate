@@ -43,7 +43,7 @@ const HeroSection = () => {
       {/* Enhanced background elements with better color balance */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-br from-secondary/30 to-accent/20 rounded-full blur-[100px] animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-gradient-to-tl from-accent/25 to-secondary/15 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1.5s' }} />
+<div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-gradient-to-tl from-accent/25 to-secondary/15 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1.5s' }}    />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-gradient-to-r from-trust/20 to-secondary/20 rounded-full blur-[80px] animate-pulse" style={{ animationDelay: '3s' }} />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-white/5 rounded-full blur-[150px]" />
       </div>
@@ -220,12 +220,13 @@ const HeroSection = () => {
       </div>
 
       {/* Optimized Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    { /* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-5 py-3 border border-white/20">
           <span className="text-white/80 text-[10px] font-bold tracking-widest uppercase">Explore More</span>
           <Icon name="ChevronDown" size={24} color="#E8B931" className="animate-pulse" />
         </div>
-      </div>
+      </div>*/}
+
     </section>);
 
 };
