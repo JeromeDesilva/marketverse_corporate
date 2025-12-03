@@ -8,68 +8,73 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-
-                 //Added gradient helper colors
+        // Added gradient helper colors
         trustlight: "var(--color-trust-light)",
         successdark: "var(--color-success-dark)",
-        
-        border: 'var(--color-border)', // gray-200
-        input: 'var(--color-input)', // gray-200
-        ring: 'var(--color-ring)', // blue-900
-        background: 'var(--color-background)', // gray-50
-        foreground: 'var(--color-foreground)', // gray-900
+
+        border: 'var(--color-border)',
+        input: 'var(--color-input)',
+        ring: 'var(--color-ring)',
+        background: 'var(--color-background)',
+        foreground: 'var(--color-foreground)',
         primary: {
-          DEFAULT: 'var(--color-primary)', // blue-900
-          foreground: 'var(--color-primary-foreground)' // white
+          DEFAULT: 'var(--color-primary)',
+          foreground: 'var(--color-primary-foreground)'
         },
         secondary: {
-          DEFAULT: 'var(--color-secondary)', // amber-400
-          foreground: 'var(--color-secondary-foreground)' // gray-900
+          DEFAULT: 'var(--color-secondary)',
+          foreground: 'var(--color-secondary-foreground)'
         },
         accent: {
-          DEFAULT: 'var(--color-accent)', // orange-500
-          foreground: 'var(--color-accent-foreground)' // white
+          DEFAULT: 'var(--color-accent)',
+          foreground: 'var(--color-accent-foreground)'
         },
         destructive: {
-          DEFAULT: 'var(--color-destructive)', // red-500
-          foreground: 'var(--color-destructive-foreground)' // white
+          DEFAULT: 'var(--color-destructive)',
+          foreground: 'var(--color-destructive-foreground)'
         },
         muted: {
-          DEFAULT: 'var(--color-muted)', // gray-100
-          foreground: 'var(--color-muted-foreground)' // gray-600
+          DEFAULT: 'var(--color-muted)',
+          foreground: 'var(--color-muted-foreground)'
         },
         card: {
-          DEFAULT: 'var(--color-card)', // white
-          foreground: 'var(--color-card-foreground)' // gray-900
+          DEFAULT: 'var(--color-card)',
+          foreground: 'var(--color-card-foreground)'
         },
         popover: {
-          DEFAULT: 'var(--color-popover)', // white
-          foreground: 'var(--color-popover-foreground)' // gray-900
+          DEFAULT: 'var(--color-popover)',
+          foreground: 'var(--color-popover-foreground)'
         },
         success: {
-          DEFAULT: 'var(--color-success)', // green-600
-          foreground: 'var(--color-success-foreground)' // white
+          DEFAULT: 'var(--color-success)',
+          foreground: 'var(--color-success-foreground)'
         },
         warning: {
-          DEFAULT: 'var(--color-warning)', // amber-500
-          foreground: 'var(--color-warning-foreground)' // gray-900
+          DEFAULT: 'var(--color-warning)',
+          foreground: 'var(--color-warning-foreground)'
         },
         error: {
-          DEFAULT: 'var(--color-error)', // red-500
-          foreground: 'var(--color-error-foreground)' // white
+          DEFAULT: 'var(--color-error)',
+          foreground: 'var(--color-error-foreground)'
         },
         trust: {
-          DEFAULT: 'var(--color-trust)', // green-600
-          foreground: 'var(--color-trust-foreground)' // white
+          DEFAULT: 'var(--color-trust)',
+          foreground: 'var(--color-trust-foreground)'
         },
         partnership: {
-          DEFAULT: 'var(--color-partnership)', // pink-600
-          foreground: 'var(--color-partnership-foreground)' // white
+          DEFAULT: 'var(--color-partnership)',
+          foreground: 'var(--color-partnership-foreground)'
         },
         innovation: {
-          DEFAULT: 'var(--color-innovation)', // purple-600
-          foreground: 'var(--color-innovation-foreground)' // white
-        }
+          DEFAULT: 'var(--color-innovation)',
+          foreground: 'var(--color-innovation-foreground)'
+        },
+
+        // ✅ Add solid background classes for partnership models
+        'partnership-equity': 'var(--color-primary)',
+        'partnership-revenue': 'var(--color-success)',
+        'partnership-project': 'var(--color-innovation)',
+        'partnership-market': 'var(--color-accent)'
       },
       fontFamily: {
         headline: ['var(--font-headline)', 'Inter', 'sans-serif'],
@@ -79,17 +84,17 @@ module.exports = {
         accent: ['var(--font-accent)', 'JetBrains Mono', 'monospace']
       },
       spacing: {
-        'xs': 'var(--spacing-xs)', // 8px
-        'sm': 'var(--spacing-sm)', // 13px
-        'md': 'var(--spacing-md)', // 21px
-        'lg': 'var(--spacing-lg)', // 34px
-        'xl': 'var(--spacing-xl)' // 55px
+        xs: 'var(--spacing-xs)',
+        sm: 'var(--spacing-sm)',
+        md: 'var(--spacing-md)',
+        lg: 'var(--spacing-lg)',
+        xl: 'var(--spacing-xl)'
       },
       borderRadius: {
-        sm: 'var(--radius-sm)', // 4px
-        md: 'var(--radius-md)', // 8px
-        lg: 'var(--radius-lg)', // 16px
-        full: 'var(--radius-full)' // 9999px
+        sm: 'var(--radius-sm)',
+        md: 'var(--radius-md)',
+        lg: 'var(--radius-lg)',
+        full: 'var(--radius-full)'
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
@@ -103,37 +108,16 @@ module.exports = {
         slow: '500ms'
       },
       transitionTimingFunction: {
-        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)'
+        smooth: 'cubic-bezier(0.4, 0, 0.2, 1)'
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
-        },
-        slideInRight: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0)' }
-        },
-        slideInLeft: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' }
-        },
-        slideInUp: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(0)' }
-        },
-        slideInDown: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(0)' }
-        },
-        scaleIn: {
-          '0%': { transform: 'scale(0.9)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' }
-        },
-        pulse: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' }
-        }
+        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        slideInRight: { '0%': { transform: 'translateX(100%)' }, '100%': { transform: 'translateX(0)' } },
+        slideInLeft: { '0%': { transform: 'translateX(-100%)' }, '100%': { transform: 'translateX(0)' } },
+        slideInUp: { '0%': { transform: 'translateY(100%)' }, '100%': { transform: 'translateY(0)' } },
+        slideInDown: { '0%': { transform: 'translateY(-100%)' }, '100%': { transform: 'translateY(0)' } },
+        scaleIn: { '0%': { transform: 'scale(0.9)', opacity: '0' }, '100%': { transform: 'scale(1)', opacity: '1' } },
+        pulse: { '0%, 100%': { opacity: '1' }, '50%': { opacity: '0.5' } }
       },
       animation: {
         'fade-in': 'fadeIn 300ms ease-out',
@@ -151,4 +135,4 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('tailwindcss-animate')
   ]
-}
+};
