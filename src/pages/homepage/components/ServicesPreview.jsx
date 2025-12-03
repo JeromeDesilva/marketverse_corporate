@@ -5,55 +5,77 @@ import Button from '../../../components/ui/Button';
 
 const ServicesPreview = () => {
   const navigate = useNavigate();
+  // map keys -> full Tailwind classes (Tailwind sees these at build time)
+  const gradientMap = {
+    'brand': 'bg-gradient-to-br from-primary to-innovation',
+    'promotion': 'bg-gradient-to-br from-secondary to-warning',
+    'market-entry': 'bg-gradient-to-br from-trustlight to-successdark',
+    'product-launch': 'bg-gradient-to-br from-partnership to-accent',
+    'ecommerce': 'bg-gradient-to-br from-secondary to-warning',
+    'growth': 'bg-gradient-to-br from-innovation to-primary'
+  };
 
   const services = [
     {
       id: 1,
       icon: "Target",
       title: "Brand Strategy & Positioning",
-      description: "Develop your brand identity and strategic positioning to help resonate with your target audience and stand out in competitive markets.",
+      //description: "Develop your brand identity and strategic positioning to help resonate with your target audience and stand out in competitive markets.",
+       description: "Transform your brand identity into a market-dominating force...",
       features: ["Market Analysis", "Brand Architecture", "Positioning Strategy"],
-      color: "from-primary to-innovation"
+     // color: "from-primary to-innovation"
+     color: "brand" // key, not the raw classes
     },
     {
       id: 2,
       icon: "Handshake",
       title: "Brand Promotion & Partnership",
-      description: "Build strategic alliances and promotional campaigns that amplify brand reach through collaborative partnerships and co-marketing initiatives.",
-      features: ["Partnership Development", "Co-Marketing Campaigns", "Brand Collaboration"],
-      color: "from-accent to-secondary"
+     // description: "Build strategic alliances and promotional campaigns that amplify brand reach through collaborative partnerships and co-marketing initiatives.",
+     description: "Build powerful strategic alliances and promotional campaigns...", 
+     features: ["Partnership Development", "Co-Marketing Campaigns", "Brand Collaboration"],
+      //color: "from-accent to-secondary"
+         color: "promotion"
     },
+
     {
       id: 3,
       icon: "Globe",
       title: "Market Entry Solutions",
-      description: "Navigate complex market landscapes with guidance for brands entering new markets, leveraging local insights and strategic planning.",
-      features: ["Market Research", "Entry Strategy", "Local Partnerships"],
-      color: "from-trust to-success"
+     // description: "Navigate complex market landscapes with guidance for brands entering new markets, leveraging local insights and strategic planning.",
+     description: "Navigate complex market landscapes with expert guidance...", 
+     features: ["Market Research", "Entry Strategy", "Local Partnerships"],
+      //color: "from-trust to-success"
+       color: "market-entry"
     },
     {
       id: 4,
       icon: "Package",
       title: "Product Launch Services",
-      description: "Comprehensive product launch strategies designed to create market awareness and drive adoption through integrated marketing campaigns.",
+      //description: "Comprehensive product launch strategies designed to create market awareness and drive adoption through integrated marketing campaigns.",
+        description: "End-to-end product launch strategies that create market buzz...",
       features: ["Launch Strategy", "PR & Media", "Influencer Marketing"],
-      color: "from-partnership to-accent"
+      //color: "from-partnership to-accent"
+         color: "product-launch"
     },
     {
       id: 5,
       icon: "ShoppingCart",
       title: "E-commerce Growth",
-      description: "Develop your online presence with e-commerce strategies covering marketplace optimization and direct-to-consumer channels.",
+      //description: "Develop your online presence with e-commerce strategies covering marketplace optimization and direct-to-consumer channels.",
+       description: "Scale your online presence with comprehensive e-commerce strategies...",
       features: ["Marketplace Strategy", "Conversion Optimization", "Customer Retention"],
-      color: "from-secondary to-warning"
+      //color: "from-secondary to-warning"
+      color: "ecommerce"
     },
     {
       id: 6,
       icon: "TrendingUp",
       title: "Growth Consulting",
-      description: "Business consulting focused on identifying growth opportunities and implementing strategies for sustainable business expansion.",
-      features: ["Growth Strategy", "Business Development", "Scalability Planning"],
-      color: "from-innovation to-primary"
+     // description: "Business consulting focused on identifying growth opportunities and implementing strategies for sustainable business expansion.",
+      description: "Strategic business consulting that identifies growth opportunities...", 
+     features: ["Growth Strategy", "Business Development", "Scalability Planning"],
+      color: "growth"
+      //color: "from-innovation to-primary"
     }
   ];
 
@@ -79,8 +101,15 @@ const ServicesPreview = () => {
               key={service?.id}
               className="group bg-card rounded-2xl p-6 sm:p-7 border border-border hover:border-primary/50 transition-all duration-300 card-hover"
             >
-              <div className={`w-14 h-14 bg-gradient-to-br ${service?.color} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
+              {/*<div className={`w-14 h-14 bg-gradient-to-br ${service?.color} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
                 <Icon name={service?.icon} size={28} color="#FFFFFF" />
+              </div>*/}
+
+              <div
+                // use the map here — classes are static strings so Tailwind includes them
+                className={`${gradientMap[service.color] || 'bg-muted'} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
+              >
+                <Icon name={service?.icon} size={32} color="#FFFFFF" />
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">

@@ -2,42 +2,53 @@ import React from 'react';
 import Icon from '../../../components/AppIcon';
 
 const WhyChooseUs = () => {
+
+   // map keys -> full Tailwind classes
+  const gradientMap = {
+    'excellence': 'bg-gradient-to-br from-primary to-innovation',
+    'results': 'bg-gradient-to-br from-secondary to-warning',
+    'market-intel': 'bg-gradient-to-br from-trustlight to-successdark',
+    'solutions': 'bg-gradient-to-br from-partnership to-accent',
+    'partnership': 'bg-gradient-to-br from-secondary to-warning',
+    'track-record': 'bg-gradient-to-br from-innovation to-primary',
+  };
+
   const reasons = [
     {
       icon: "Award",
       title: "Data-Driven Excellence",
       description: "Advanced analytics and market intelligence combined with creative expertise to deliver campaigns designed to meet and exceed industry standards.",
-      color: "from-primary to-innovation"
+      color: "excellence"
     },
     {
       icon: "Target",
       title: "Measurable Results Focus",
       description: "Every campaign is tracked, analyzed, and optimized for return on investment. We focus on delivering data-backed outcomes aligned with your business goals.",
-      color: "from-accent to-secondary"
+      color: "results"
     },
     {
       icon: "Globe",
       title: "Cultural Market Intelligence",
       description: "Understanding of Indian market dynamics combined with global best practices to help achieve authentic local resonance.",
-      color: "from-trust to-success"
+      color: "market-intel"
     },
     {
       icon: "Zap",
       title: "End-to-End Solutions",
       description: "From strategy to execution, we handle every aspect of your marketing journey with integrated, comprehensive services tailored to your needs.",
-      color: "from-partnership to-accent"
+      color: "solutions"
     },
     {
       icon: "Users",
       title: "Collaborative Partnership",
-      description: "You\'re not just a client—you\'re a partner. We work closely with your teams and provide dedicated support to help achieve your marketing objectives.",
-      color: "from-secondary to-warning"
+      description: "You're not just a client—you're a partner. We work closely with your teams and provide dedicated support to help achieve your marketing objectives.",
+      color: "partnership"
     },
     {
       icon: "TrendingUp",
       title: "Proven Experience",
       description: "50+ brands served with demonstrated growth results and high client satisfaction across diverse industries and marketing campaigns.",
-      color: "from-innovation to-primary"
+      color: "track-record"
     }
   ];
 
@@ -58,21 +69,25 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reasons?.map((reason, index) => (
+          {reasons.map((reason, index) => (
             <div
               key={index}
               className="group bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all card-hover"
             >
-              <div className={`w-16 h-16 bg-gradient-to-br ${reason?.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+             {/* <div className={`w-16 h-16 bg-gradient-to-br ${reason?.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                 <Icon name={reason?.icon} size={32} color="#FFFFFF" />
+              </div>*/}
+
+              <div className={`w-16 h-16 ${gradientMap[reason.color] || 'bg-muted'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                <Icon name={reason.icon} size={32} color="#FFFFFF" />
               </div>
 
               <h3 className="text-xl font-bold text-foreground mb-3">
-                {reason?.title}
+                {reason.title}
               </h3>
 
               <p className="text-muted-foreground leading-relaxed">
-                {reason?.description}
+                {reason.description}
               </p>
             </div>
           ))}
