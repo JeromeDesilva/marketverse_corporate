@@ -4,43 +4,41 @@ echo "🚀 Starting automatic deployment..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+npm install --legacy-peer-deps
 
-# Build project
+# Build project for production
 echo "🛠 Building project..."
-npm run build
+npm run build || { echo "❌ Build failed!"; exit 1; }
 
-# Path to copy build files on Windows
-WIN_PATH="/mnt/c/Users/saro/Desktop/marketverse_deploy"
+# Deployment folder inside WSL
+DEPLOY_PATH="$HOME/marketverse_deploy"
 
-# Make sure the folder exists
-mkdir -p "$WIN_PATH"
+# Create folder if not exists
+mkdir -p "$DEPLOY_PATH"
 
-# Copy the build output
-echo "📂 Copying build files to Windows..."
-if [ -d "build" ]; then
-    cp -r build/* "$WIN_PATH"/
-    echo "✅ Copy complete!"
-else
-    echo "❌ Build folder not found. Build may have failed."
-    exit 1
-fi
+# Copy build output from Vite's 'build' folder
+echo "�� Copying build files to WSL deploy folder..."
+cp -r build/* "$DEPLOY_PATH"/ || { echo "❌ Copy failed!"; exit 1; }
 
-# Install serve globally if not installed
+echo "✅ Files copied to: $DEPLOY_PATH"
+
+# Install 'serve' if not installed
 if ! command -v serve &> /dev/null
 then
     echo "📦 Installing 'serve' globally..."
     npm install -g serve
 fi
 
-# Start static server in background
-echo "🌐 Starting static server on port 4028..."
-serve -s build -l 4028 &
+# Kill previous server if running
+pkill -f "serve -s" >/dev/null 2>&1
 
-# Wait a few seconds to make sure server is up
-sleep 3
+# Start static server
+echo "🌐 Starting static server on port 4028..."
+serve -s "$DEPLOY_PATH" -l 4028 &
+
+sleep 2
 
 # Open in browser
 cmd.exe /c start http://localhost:4028
 
-echo "🎉 Deployment complete!"
+echo "🎉 Deployment complete! Visit: http://localhost:4028"

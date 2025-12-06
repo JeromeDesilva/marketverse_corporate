@@ -33,7 +33,7 @@ const CTASection = () => {
                 size="lg"
                 iconName="Mail"
                 iconPosition="left"
-                onClick={() => window.location.href = 'mailto:careers@marketverse.com'}
+                onClick={() => window.location.href = 'mailto:careers@marketverse.co.in'}
                 className="border-white text-white hover:bg-white/10"
               >
                 Send Us Your Resume
@@ -45,7 +45,7 @@ const CTASection = () => {
                 Questions about careers at Marketverse?
               </p>
               <a
-                href="mailto:careers@marketverse.com"
+                href="mailto:careers@marketverse.co.in"
                 className="inline-flex items-center gap-2 text-white font-medium hover:text-white/90 transition-colors"
               >
                 <Mail className="w-5 h-5" />

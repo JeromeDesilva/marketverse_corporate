@@ -76,6 +76,8 @@ module.exports = {
         'partnership-project': 'var(--color-innovation)',
         'partnership-market': 'var(--color-accent)'
       },
+
+
       fontFamily: {
         headline: ['var(--font-headline)', 'Inter', 'sans-serif'],
         'value-prop': ['var(--font-value-prop)', 'Poppins', 'sans-serif'],
@@ -107,6 +109,14 @@ module.exports = {
         base: '400ms',
         slow: '500ms'
       },
+
+      safelist: [
+  'bg-partnership-equity',
+  'bg-partnership-revenue',
+  'bg-partnership-project',
+  'bg-partnership-market',
+],
+
       transitionTimingFunction: {
         smooth: 'cubic-bezier(0.4, 0, 0.2, 1)'
       },

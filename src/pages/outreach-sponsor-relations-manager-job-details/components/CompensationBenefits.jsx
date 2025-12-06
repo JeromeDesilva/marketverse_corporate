@@ -1,5 +1,5 @@
 import React from 'react';
-import { IndianRupeeSign, TrendingUp, Heart, Lightbulb, Plane, Home } from 'lucide-react';
+import { IndianRupee, TrendingUp, Heart, Lightbulb, Plane, Home } from 'lucide-react';
 
 const CompensationBenefits = () => {
   const compensation = {
@@ -19,7 +19,7 @@ const CompensationBenefits = () => {
 
   const benefits = [
     {
-      icon: IndianRupeeSign,
+      icon: IndianRupee,
       title: 'Competitive Compensation',
       description: '₹5,00,000 - ₹9,00,000 annually based on experience',
       details: [

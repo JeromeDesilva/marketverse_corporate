@@ -21,68 +21,67 @@ const VisionMissionSection = () => {
     {
       icon: "Award",
       title: "Excellence Standard",
-      description: "Mediocrity has no place here. We set the bar high and consistently exceed expectations through quality execution."
+      description: "We consistently exceed expectations through high-quality execution and relentless improvement."
     }
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-innovation)] to-[var(--color-primary)] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(45deg, #FFFFFF 25%, transparent 25%),
-                           linear-gradient(-45deg, #FFFFFF 25%, transparent 25%),
-                           linear-gradient(45deg, transparent 75%, #FFFFFF 75%),
-                           linear-gradient(-45deg, transparent 75%, #FFFFFF 75%)`,
-          backgroundSize: '40px 40px',
-          backgroundPosition: '0 0, 0 20px, 20px -20px, -20px 0px'
-        }}></div>
-      </div>
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-innovation)] to-[var(--color-primary)] text-white">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+
+        {/* Vision + Mission */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
+          
+          {/* Vision Block */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10">
             <div className="w-16 h-16 rounded-full bg-[var(--color-secondary)] flex items-center justify-center mb-6">
-              <Icon name="Eye" size={32} color="var(--color-secondary-foreground)" />
+              <Icon name="Eye" size={32} color="#fff" />
             </div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">Our Vision</h3>
-            <p className="text-lg text-white/90 leading-relaxed mb-4">
-              To be recognized as a trusted marketing and brand-building agency that helps ambitious brands achieve market leadership through strategic expertise and proven methodologies.
-            </p>
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Our Vision</h3>
             <p className="text-lg text-white/90 leading-relaxed">
-              We envision a future where every great product gets the visibility it deserves, where marketing confidence replaces marketing uncertainty, and where growth becomes more achievable through intelligent strategy execution.
+              To be the agency that empowers ambitious brands to achieve market leadership
+              through innovative strategies and measurable growth.
+              We envision a future where every great product gets the visibility it deserves,
+              where marketing confidence replaces marketing uncertainty, 
+              and where growth becomes more achievable through intelligent strategy execution.
             </p>
           </div>
 
+          {/* Mission Block */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10">
             <div className="w-16 h-16 rounded-full bg-[var(--color-accent)] flex items-center justify-center mb-6">
-              <Icon name="Compass" size={32} color="#FFFFFF" />
+              <Icon name="Compass" size={32} color="#fff" />
             </div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">Our Mission</h3>
-            <p className="text-lg text-white/90 leading-relaxed mb-4">
-              To combine corporate credibility with startup agility, delivering end-to-end marketing solutions that bridge the gap between global trends and local market resonance.
-            </p>
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Our Mission</h3>
             <p className="text-lg text-white/90 leading-relaxed">
+              To blend corporate-level credibility with startup-style agility and deliver
+              impactful marketing that drives consistent business results.
               We exist to make marketing confidence accessible to ambitious brands, to turn complex market challenges into exciting opportunities, and to compress decades of expertise into transformative partnerships.
             </p>
           </div>
         </div>
 
-        <div>
-          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
-            Our Core Values
-          </h3>
+        {/* Core Values */}
+        <h3 className="text-2xl lg:text-3xl font-bold text-center mb-12">
+          Our Core Values
+        </h3>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values?.map((value, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-innovation)] flex items-center justify-center mb-4">
-                  <Icon name={value?.icon} size={24} color="#FFFFFF" />
-                </div>
-                <h4 className="text-lg font-bold text-[var(--color-foreground)] mb-3">{value?.title}</h4>
-                <p className="text-[var(--color-muted-foreground)] leading-relaxed">{value?.description}</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {values.map((value, index) => (
+            <div key={index} className="bg-white rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-innovation)] flex items-center justify-center mb-4">
+                <Icon name={value.icon} size={24} color="#fff" />
               </div>
-            ))}
-          </div>
+              <h4 className="text-lg font-bold text-[var(--color-foreground)] mb-2">
+                {value.title}
+              </h4>
+              <p className="text-[var(--color-muted-foreground)] leading-relaxed">
+                {value.description}
+              </p>
+            </div>
+          ))}
         </div>
+
       </div>
     </section>
   );

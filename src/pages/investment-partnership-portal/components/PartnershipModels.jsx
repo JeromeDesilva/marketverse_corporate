@@ -4,7 +4,8 @@ import Button from '../../../components/ui/Button';
 
 const PartnershipModels = () => {
   const [selectedModel, setSelectedModel] = useState('equity');
-  // Map model color names to Tailwind classes
+
+  // Tailwind color classes for model headers
   const colorClassMap = {
     partnership: 'bg-partnership',
     innovation: 'bg-innovation',
@@ -13,10 +14,8 @@ const PartnershipModels = () => {
     primary: 'bg-primary',
     secondary: 'bg-secondary',
     accent: 'bg-accent',
-    // Add more if needed
   };
-
-
+  
   const models = [
     {
       id: 'equity',
@@ -32,10 +31,10 @@ const PartnershipModels = () => {
         'Quarterly profit sharing from operations',
         'Access to proprietary market intelligence',
         'Priority exit options with guaranteed buyback',
-        'Co-branding opportunities for portfolio companies'
+        'Co-branding opportunities for portfolio companies',
       ],
       idealFor: 'Institutional investors, Family offices, Strategic corporate investors',
-      color: 'primary'
+      color: 'primary',
     },
     {
       id: 'revenue',
@@ -51,10 +50,10 @@ const PartnershipModels = () => {
         'No equity dilution or ownership transfer',
         'Transparent revenue tracking dashboard',
         'Flexible exit terms with 6-month notice',
-        'Participation in specific high-margin projects'
+        'Participation in specific high-margin projects',
       ],
       idealFor: 'Angel investors, HNIs, Marketing professionals seeking passive income',
-      color: 'success'
+      color: 'success',
     },
     {
       id: 'project',
@@ -70,10 +69,10 @@ const PartnershipModels = () => {
         'Defined project scope with clear deliverables',
         'Profit sharing from project success fees',
         'Lower risk with shorter commitment periods',
-        'Option to reinvest in subsequent projects'
+        'Option to reinvest in subsequent projects',
       ],
       idealFor: 'First-time investors, Risk-averse partners, Industry professionals',
-      color: 'innovation'
+      color: 'innovation',
     },
     {
       id: 'market',
@@ -89,16 +88,16 @@ const PartnershipModels = () => {
         'Shared investment in market research and setup',
         'Revenue sharing from successful brand entries',
         'Access to Marketverse distribution network',
-        'Co-ownership of market entry IP and processes'
+        'Co-ownership of market entry IP and processes',
       ],
       idealFor: 'International brands, Import/export businesses, Global investors',
-      color: 'accent'
-    }
+      color: 'accent',
+    },
   ];
 
-  const currentModel = models?.find((m) => m?.id === selectedModel);
+  const currentModel = models.find((m) => m.id === selectedModel);
 
-   return (
+  return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
@@ -117,64 +116,67 @@ const PartnershipModels = () => {
 
         {/* Model Tabs */}
         <div className="grid lg:grid-cols-4 gap-4 mb-12">
-          {models?.map((model) => (
-            <button
-              key={model?.id}
-              onClick={() => setSelectedModel(model?.id)}
-              className={`p-6 rounded-xl border-2 transition-all text-left ${
-                selectedModel === model?.id
-                  ? 'border-primary bg-primary/5 shadow-lg'
-                  : 'border-border bg-card hover:border-primary/50'
-              }`}
-            >
-              <div
-                className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                  selectedModel === model?.id ? 'bg-primary' : 'bg-muted'
+          {models.map((model) => {
+            const isSelected = selectedModel === model.id;
+            return (
+              <button
+                key={model.id}
+                onClick={() => setSelectedModel(model.id)}
+                className={`p-6 rounded-xl border-2 transition-all text-left ${
+                  isSelected
+                    ? `border-${model.color} bg-${model.color}/10 shadow-lg`
+                    : 'border-border bg-card hover:border-primary/50'
                 }`}
               >
-                <Icon
-                  name={model?.icon}
-                  size={24}
-                  color={selectedModel === model?.id ? '#FFFFFF' : 'var(--color-muted-foreground)'}
-                />
-              </div>
-              <h3 className="text-lg font-bold text-foreground mb-1">{model?.title}</h3>
-              <p className="text-sm text-muted-foreground">{model?.subtitle}</p>
-            </button>
-          ))}
+                <div
+                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
+                    isSelected ? `bg-${model.color}` : 'bg-muted'
+                  }`}
+                >
+                  <Icon
+                    name={model.icon}
+                    size={24}
+                    color={isSelected ? '#FFFFFF' : 'var(--color-muted-foreground)'}
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-1">{model.title}</h3>
+                <p className="text-sm text-muted-foreground">{model.subtitle}</p>
+              </button>
+            );
+          })}
         </div>
 
         {/* Selected Model Card */}
         {currentModel && (
           <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden border-solid">
             {/* Solid Color Header */}
-            <div className={`${colorClassMap[currentModel?.color] || 'bg-primary'} p-8 text-white rounded-t-2xl`}>
+            <div className={`${colorClassMap[currentModel.color]} p-8 text-white rounded-t-2xl`}>
               <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">{currentModel?.title}</h3>
-                  <p className="text-white/90">{currentModel?.subtitle}</p>
+                  <h3 className="text-2xl font-bold mb-2">{currentModel.title}</h3>
+                  <p className="text-white/90">{currentModel.subtitle}</p>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                  <Icon name={currentModel?.icon} size={32} color="#FFFFFF" />
+                  <Icon name={currentModel.icon} size={32} color="#FFFFFF" />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
                   <div className="text-sm text-white/80 mb-1">Investment Range</div>
-                  <div className="text-xl font-bold">{currentModel?.investment}</div>
+                  <div className="text-xl font-bold">{currentModel.investment}</div>
                 </div>
                 <div>
                   <div className="text-sm text-white/80 mb-1">Equity/Structure</div>
-                  <div className="text-xl font-bold">{currentModel?.equity}</div>
+                  <div className="text-xl font-bold">{currentModel.equity}</div>
                 </div>
                 <div>
                   <div className="text-sm text-white/80 mb-1">Duration</div>
-                  <div className="text-xl font-bold">{currentModel?.duration}</div>
+                  <div className="text-xl font-bold">{currentModel.duration}</div>
                 </div>
                 <div>
                   <div className="text-sm text-white/80 mb-1">Expected Returns</div>
-                  <div className="text-xl font-bold">{currentModel?.returns}</div>
+                  <div className="text-xl font-bold">{currentModel.returns}</div>
                 </div>
               </div>
             </div>
@@ -188,7 +190,7 @@ const PartnershipModels = () => {
                     Key Features & Benefits
                   </h4>
                   <ul className="space-y-3">
-                    {currentModel?.features?.map((feature, index) => (
+                    {currentModel.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <Icon
                           name="ArrowRight"
@@ -208,7 +210,7 @@ const PartnershipModels = () => {
                       <Icon name="Users" size={20} color="var(--color-primary)" />
                       Ideal For
                     </h4>
-                    <p className="text-muted-foreground">{currentModel?.idealFor}</p>
+                    <p className="text-muted-foreground">{currentModel.idealFor}</p>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -230,4 +232,3 @@ const PartnershipModels = () => {
 };
 
 export default PartnershipModels;
-
