@@ -128,7 +128,7 @@ const ApplicationProcess = () => {
                   label="Phone Number"
                   name="phone"
                   type="tel"
-                  placeholder="+1 (555) 000-0000"
+                  placeholder="+91 11 2345 6789"
                   value={formData?.phone}
                   onChange={handleInputChange}
                   required

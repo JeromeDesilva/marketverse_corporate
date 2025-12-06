@@ -1,12 +1,12 @@
 import React from 'react';
-import { DollarSign, Heart, Briefcase, TrendingUp } from 'lucide-react';
+import { IndianRupee, Heart, Briefcase, TrendingUp } from 'lucide-react';
 
 const CompensationBenefits = () => {
   const benefits = [
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: 'Competitive Compensation',
-      description: '₹6,00,000 - ₹90,00,000 annually based on experience',
+      description: '₹6,00,000 - ₹35,00,000 annually based on experience',
       details: [
         'Performance-based bonuses tied to campaign success',
         'Annual merit increases and promotions',

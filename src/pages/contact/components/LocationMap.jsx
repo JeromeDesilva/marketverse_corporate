@@ -5,18 +5,18 @@ const LocationMap = () => {
   const offices = [
     {
       city: 'Chennai',
-      address: 'Marketverse HQ, Ambattur Industrial Estate, Chennai 600053, Tamil Nadu, Kallikuppam',
+      address: 'Marketverse HQ, Ambattur , Chennai 600053, Tamil Nadu, India',
       phone: '+91 86628 41456',
       email: 'chennai@marketverse.co.in',
       isPrimary: true,
-      lat: 13.1212,
-      lng: 80.1622
+      lat: 13.1245,
+      lng: 80.1465
     },
     {
       city: 'Delhi',
       address: 'Marketverse North, Coming Soon, Delhi & Mumbai, India',
-      phone: null,
-      email: null,
+      phone: '+91 86628 41456',
+      email: 'chennai@marketverse.co.in',
       isPrimary: false,
       lat: 28.6139,
       lng: 77.2090

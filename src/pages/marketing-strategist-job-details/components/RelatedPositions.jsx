@@ -7,7 +7,7 @@ const RelatedPositions = () => {
     {
       title: 'Creative Director',
       department: 'Creative',
-      location: 'New York',
+      location: 'India / Remote',
       type: 'Full-time',
       description: 'Lead creative vision for major campaigns and oversee design, copy, and production teams.',
       alt: 'Creative director position card'
@@ -15,7 +15,7 @@ const RelatedPositions = () => {
     {
       title: 'Business Development Manager',
       department: 'Business Development',
-      location: 'Chicago',
+      location: 'India / Remote',
       type: 'Full-time',
       description: 'Drive new business acquisition and build long-term client relationships.',
       alt: 'Business development manager position card'
@@ -23,7 +23,7 @@ const RelatedPositions = () => {
     {
       title: 'Public Relations Specialist',
       department: 'Marketing',
-      location: 'New York / Remote',
+      location: 'India / Remote',
       type: 'Full-time',
       description: 'Manage company reputation and media relations through strategic PR campaigns.',
       alt: 'Public relations specialist position card'
