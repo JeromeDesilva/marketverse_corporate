@@ -117,7 +117,7 @@ const PrivacyPolicy = () => {
       partners: "HubSpot, Mailchimp",
       purpose: "Customer relationship management, email marketing, and communication tracking",
       dataShared: "Contact information, communication preferences, interaction history",
-      optOut: "Unsubscribe links in emails or contact privacy@marketverse.com"
+      optOut: "Unsubscribe links in emails or contact privacy@marketverse.co.in"
     },
     {
       category: "Analytics & Insights",
@@ -480,7 +480,7 @@ const PrivacyPolicy = () => {
                 <div className="bg-card rounded-lg p-6 border border-border text-center">
                   <Icon name="Mail" size={32} className="text-primary mx-auto mb-3" />
                   <h3 className="font-bold text-foreground mb-2">Email Us</h3>
-                  <p className="text-muted-foreground text-sm">privacy@marketverse.com</p>
+                  <p className="text-muted-foreground text-sm">privacy@marketverse.co.in</p>
                 </div>
 
                 <div className="bg-card rounded-lg p-6 border border-border text-center">
@@ -492,7 +492,7 @@ const PrivacyPolicy = () => {
                 <div className="bg-card rounded-lg p-6 border border-border text-center">
                   <Icon name="MapPin" size={32} className="text-primary mx-auto mb-3" />
                   <h3 className="font-bold text-foreground mb-2">Office</h3>
-                  <p className="text-muted-foreground text-sm">Mumbai, India</p>
+                  <p className="text-muted-foreground text-sm">Chennai, India</p>
                 </div>
               </div>
 

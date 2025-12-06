@@ -25,7 +25,7 @@ const HeroSection = () => {
               <MapPin className="w-5 h-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground">Location</p>
-                <p className="text-sm font-medium text-foreground">Chennai / Mumbai</p>
+                <p className="text-sm font-medium text-foreground">Chennai </p>
               </div>
             </div>
             

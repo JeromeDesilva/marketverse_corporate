@@ -32,7 +32,7 @@ const CompensationBenefits = () => {
       title: 'Professional Growth',
       description: 'Invest in your strategic career',
       details: [
-        'Professional development budget ($3,000/year)',
+        'Professional development budget (₹3,000/year)',
         'Industry conference and workshop attendance',
         'Advanced certification support',
         'Mentorship from senior strategists'
